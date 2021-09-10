@@ -21,6 +21,7 @@ export default class Header extends Component{
     render() {
         return(
             <>
+            <Router>
             <Navbar sticky = "top" collapseOnSelect expand = "lg" bg = "primary" variant = "light" >
                 <Container>
                     <Navbar.Brand href = "/">
@@ -34,17 +35,17 @@ export default class Header extends Component{
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls = "responsive-navbar-nav" />
                     <Navbar.Collapse id = "responsive-navbar-nav" >
-                        <Nav className = "me-auto" >
-                        <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/about">About us</Nav.Link>
-                        <Nav.Link href="/sports">Sports</Nav.Link>
-                        <Nav.Link href="/gallery">Gallery</Nav.Link>
-                        <NavDropdown title="Service" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/service1">Service1</NavDropdown.Item>
-                            <NavDropdown.Item href="/service2">Service2 </NavDropdown.Item>
-                            <NavDropdown.Item href="/service3">Service3</NavDropdown.Item>
+                        <Nav className = "me-auto">
+                        <Nav.Link><Link to = "/" className = "linkColor">Home</Link></Nav.Link>
+                        <Nav.Link><Link to = "/about" className = "linkColor">About us</Link></Nav.Link>
+                        <Nav.Link><Link to = "/sports" className = "linkColor">Sports</Link></Nav.Link>
+                        <Nav.Link><Link to = "/gallery" className = "linkColor">Gallery</Link></Nav.Link>
+                        <NavDropdown title="Service" id="basic-nav-dropdown" className = "linkColor">
+                            <NavDropdown.Item><Link to = "/service1" className = "linkColor">Service1</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to = "/service2" className = "linkColor">Service2 </Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to = "/service3" className = "linkColor">Service3</Link></NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="/service4">Service4</NavDropdown.Item>
+                            <NavDropdown.Item><Link to = "/service4" className = "linkColor">Service4</Link></NavDropdown.Item>
                         </NavDropdown>
                         </Nav>
                         <Form>
@@ -53,7 +54,6 @@ export default class Header extends Component{
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            <Router>
                 <Switch>
                     <Route exact path ="/" component = {Home} />
                     <Route exact path ="/about" component = {About} />
