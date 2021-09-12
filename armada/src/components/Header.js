@@ -1,10 +1,11 @@
 /**
  * Create by Kuznetsov Leonid 
  * 23:04  2.09.2021
+ * actual version from 17:20 12.09.2021
  */ 
 
-import React, { Component } from 'react';
-import { Button, Container, Nav, Navbar, Form, NavDropdown } from 'react-bootstrap';
+import React, { Component, useState } from 'react';
+import { Button, Container, Nav, Navbar, Form, NavDropdown, Modal } from 'react-bootstrap';
 import logo from '../img/stick-man-riding-on-a-horse.png';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
@@ -18,6 +19,26 @@ import Service3 from '../pages/Service3';
 import Service4 from '../pages/Service4';
 
 export default class Header extends Component{
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+            showModal: false
+        };
+    
+        this.open = this.open.bind(this);
+        this.close = this.close.bind(this);
+    }
+    
+    close() {
+        this.setState({ showModal: false });
+    }
+    
+    open() {
+        console.log('open');
+        this.setState({ showModal: true });
+    }
+    
     render() {
         return(
             <>
@@ -49,11 +70,31 @@ export default class Header extends Component{
                         </NavDropdown>
                         </Nav>
                         <Form>
-                            <Button variante = "outline-info">Teke order</Button>
+                            <Button variante = "outline-info" className = "mr-2" onClick = {this.open}>Teke order</Button>
                         </Form>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            <Modal show={this.state.showModal} onHide={this.close}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Take order</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <Form>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control type="email" placeholder="name@example.com" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                        <Form.Label>Example textarea</Form.Label>
+                        <Form.Control as="textarea" rows={3} />
+                    </Form.Group>
+                    <Button variant="primary" type="submit">
+                    Submit
+                    </Button>
+                    </Form>
+                </Modal.Body>
+            </Modal>
                 <Switch>
                     <Route exact path ="/" component = {Home} />
                     <Route exact path ="/about" component = {About} />
@@ -65,6 +106,7 @@ export default class Header extends Component{
                     <Route exact path ="/service4" component = {Service4} />
                 </Switch>
             </Router>
+            
             </>
         );
     }

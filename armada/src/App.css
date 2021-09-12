@@ -42,3 +42,7 @@
   color: black;
   text-decoration: none;
 }
+.carousel {
+  position: relative;
+  max-width: 850px;
+}
