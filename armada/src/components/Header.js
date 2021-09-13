@@ -4,7 +4,7 @@
  * actual version from 17:20 12.09.2021
  */ 
 
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import { Button, Container, Nav, Navbar, Form, NavDropdown, Modal } from 'react-bootstrap';
 import logo from '../img/stick-man-riding-on-a-horse.png';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -43,7 +43,7 @@ export default class Header extends Component{
         return(
             <>
             <Router>
-            <Navbar sticky = "top" collapseOnSelect expand = "lg" bg = "primary" variant = "light" >
+            <Navbar sticky = "top" collapseOnSelect expand = "lg" bg = "primary" variant = "light">
                 <Container>
                     <Navbar.Brand href = "/">
                         <img 

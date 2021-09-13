@@ -44,5 +44,28 @@
 }
 .carousel {
   position: relative;
-  max-width: 850px;
+  max-width: 25rem;
+
+}
+
+.block-Home-1{ 
+  display:flex;
+  overflow: hidden;
+  text-align:center;
+  flex-direction:column;
+  float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-inline: 5px;
+  margin-block: 10px;
+}
+.logo-adop{
+  width: 100%;
+  max-width: 20rem;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
