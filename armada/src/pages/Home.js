@@ -54,7 +54,7 @@ export default class Home extends Component{
                                 <h1>АРМАДА</h1>
                             </Card.Title>
                             <Card.Text>
-                                <h3>Поэзия в движении</h3>
+                                <h3>"Поэзия в движении"</h3>
                             </Card.Text>
                         </Card.Body>
                     </Card>

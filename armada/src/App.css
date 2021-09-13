@@ -69,3 +69,17 @@
   margin-right: auto;
   
 }
+
+.social{
+  display:flex;
+  overflow: hidden;
+  text-align:center;
+  flex-direction:column;
+  float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.durnMap{
+  
+}
