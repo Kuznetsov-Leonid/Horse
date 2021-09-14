@@ -57,11 +57,11 @@ export default class Header extends Component{
                     <Navbar.Toggle aria-controls = "responsive-navbar-nav" />
                     <Navbar.Collapse id = "responsive-navbar-nav" >
                         <Nav className = "me-auto">
-                        <Nav.Link><Link to = "/" className = "linkColor">Home</Link></Nav.Link>
-                        <Nav.Link><Link to = "/about" className = "linkColor">About us</Link></Nav.Link>
-                        <Nav.Link><Link to = "/sports" className = "linkColor">Sports</Link></Nav.Link>
-                        <Nav.Link><Link to = "/gallery" className = "linkColor">Gallery</Link></Nav.Link>
-                        <NavDropdown title="Service" id="basic-nav-dropdown" className = "linkColor">
+                        <Nav.Link><Link to = "/" className = "linkColor">Главная</Link></Nav.Link>
+                        <Nav.Link><Link to = "/about" className = "linkColor">О нас</Link></Nav.Link>
+                        <Nav.Link><Link to = "/sports" className = "linkColor">Спортсменам</Link></Nav.Link>
+                        <Nav.Link><Link to = "/gallery" className = "linkColor">Галерея</Link></Nav.Link>
+                        <NavDropdown title="Услуги" id="basic-nav-dropdown" className = "linkColor">
                             <NavDropdown.Item><Link to = "/service1" className = "linkColor">Service1</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to = "/service2" className = "linkColor">Service2 </Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to = "/service3" className = "linkColor">Service3</Link></NavDropdown.Item>
@@ -70,7 +70,7 @@ export default class Header extends Component{
                         </NavDropdown>
                         </Nav>
                         <Form>
-                            <Button variante = "outline-info" className = "mr-2" onClick = {this.open}>Teke order</Button>
+                            <Button variante = "outline-info" className = "mr-2" onClick = {this.open}>Оставить заявку</Button>
                         </Form>
                     </Navbar.Collapse>
                 </Container>
