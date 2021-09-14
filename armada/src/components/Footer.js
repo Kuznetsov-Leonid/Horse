@@ -22,16 +22,13 @@ export default class Footer extends Component{
                     'display':'flex',
                     'backgroundColor':'#212529',
                     'color':'white',
-                    'width':'100%'
+                    'width':'100%',
+                    'height':'auto'
                     }}>
-                    <Container style = {{
-                        'display':'flex',
-                        'JustifyContent':'center',
-                        'padding':'10px'
-                        }}>
-                        <Row>
+                    <Container className = "fotter-cont">
+                            <div className="block-Home-1">
                         <Card style={{
-                            'width': '22rem',
+                            'width': '24rem',
                             'padding':'5px'
                         }}>
                         <ListGroup className="list-group-flush">
@@ -78,19 +75,27 @@ export default class Footer extends Component{
                         <Card.Link href="#">Another Link</Card.Link>
                         </Card.Body>
                         </Card>
-                        </Row>
-                        <Row>
-                        <Card style={{'padding':'5px'}}>
+                        </div>
+                        <div className="block-Home-1"> 
+                        <Card style={{'padding':'5px', 'width':'24rem'}}>
                         <Card.Body>
                         <Card.Link href="#">Вакансии</Card.Link> <br />
                         <Card.Link href="#">Политика конфиденциальности</Card.Link> <br />
                         <Card.Link href="#">О сайте</Card.Link>
                         </Card.Body>
                         </Card> 
-                        </Row>
-                        <Row>
-                            <div className="durnMap"><Maps /></div>
-                        </Row>
+                        </div>
+                        <div className="block-Home-1">
+                        <Card style={{
+                                    'padding':'0px',
+                                    'width': '24rem',
+                                    'height':'20rem'
+                                    }}>
+                        <Card.Body>
+                        <div className="mapStyle"><Maps /></div>
+                        </Card.Body>
+                        </Card> 
+                        </div>
                     </Container>
                 </Container>
                 

@@ -80,6 +80,23 @@
   margin-left: auto;
   margin-right: auto;
 }
-.durnMap{
-  
+.mapStyle{
+  position: relative;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fotter-cont{
+    justify-content: center;
+    padding: 0px 15px 0px 0px;
+    height: auto;
+    display: inline-table;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
