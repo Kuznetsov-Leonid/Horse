@@ -81,7 +81,10 @@ export default class Footer extends Component{
                         <Card.Body>
                         <Card.Link href="#">Вакансии</Card.Link> <br />
                         <Card.Link href="#">Политика конфиденциальности</Card.Link> <br />
-                        <Card.Link href="#">О сайте</Card.Link>
+                        <Card.Link href="#">О сайте</Card.Link> <br />
+                        <Card.Link target="_blank" href="https://goo.gl/maps/8Dnrjdv5yeGwhYBZ8">
+                            Новорязанское шоссе, дер. Дурниха Раменского района, 25 км от МКАД.
+                        </Card.Link>
                         </Card.Body>
                         </Card> 
                         </div>
@@ -89,16 +92,15 @@ export default class Footer extends Component{
                         <Card style={{
                                     'padding':'0px',
                                     'width': '24rem',
-                                    'height':'20rem'
+                                    'height':'22rem'
                                     }}>
                         <Card.Body>
-                        <div className="mapStyle"><Maps /></div>
+                            <div className="mapStyle"><Maps /></div>
                         </Card.Body>
                         </Card> 
                         </div>
                     </Container>
                 </Container>
-                
             </>
         );
     }
