@@ -70,7 +70,7 @@ export default class Header extends Component{
                         </NavDropdown>
                         </Nav>
                         <Form>
-                            <Button variante = "outline-info" className = "mr-2" onClick = {this.open}>Оставить заявку</Button>
+                            <Button variant="warning" className = "mr-2" onClick = {this.open}>Оставить заявку</Button>
                         </Form>
                     </Navbar.Collapse>
                 </Container>
