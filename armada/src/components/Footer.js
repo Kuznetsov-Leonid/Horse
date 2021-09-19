@@ -26,9 +26,9 @@ export default class Footer extends Component{
                     'height':'auto'
                     }}>
                     <Container className = "fotter-cont">
-                            <div className="block-Home-1">
+                            <div className="block-Home-2">
                         <Card style={{
-                            'width': '24rem',
+                            'width': '22rem',
                             'padding':'5px'
                         }}>
                         <ListGroup className="list-group-flush">
@@ -76,23 +76,33 @@ export default class Footer extends Component{
                         </Card.Body>
                         </Card>
                         </div>
-                        <div className="block-Home-1"> 
-                        <Card style={{'padding':'5px', 'width':'24rem'}}>
+                        <div className="block-Home-2"> 
+                        <Card style={{'padding':'31.3px', 'width':'22rem'}}>
                         <Card.Body>
-                        <Card.Link href="#">Вакансии</Card.Link> <br />
-                        <Card.Link href="#">Политика конфиденциальности</Card.Link> <br />
-                        <Card.Link href="#">О сайте</Card.Link> <br />
-                        <Card.Link target="_blank" href="https://goo.gl/maps/8Dnrjdv5yeGwhYBZ8">
-                            Новорязанское шоссе, дер. Дурниха Раменского района, 25 км от МКАД.
-                        </Card.Link>
+                            <ListGroup className="list-group-flush">
+                                <ListGroupItem>
+                                    <Card.Link  href="#">Вакансии</Card.Link> <br />
+                                </ListGroupItem>
+                                <ListGroupItem>
+                                    <Card.Link  href="#">Политика конфиденциальности</Card.Link> <br />
+                                </ListGroupItem>
+                                <ListGroupItem>
+                                    <Card.Link  href="#">О сайте</Card.Link> <br />
+                                </ListGroupItem>
+                                <ListGroupItem>
+                                    <Card.Link  target="_blank" href="https://goo.gl/maps/8Dnrjdv5yeGwhYBZ8">
+                                    Новорязанское шоссе, дер. Дурниха Раменского района, 25 км от МКАД.
+                                    </Card.Link>
+                                </ListGroupItem>
+                            </ListGroup>
                         </Card.Body>
                         </Card> 
                         </div>
-                        <div className="block-Home-1">
+                        <div className="block-Home-2">
                         <Card style={{
                                     'padding':'0px',
-                                    'width': '24rem',
-                                    'height':'22rem'
+                                    'width': '22rem',
+                                    'height':'20rem'
                                     }}>
                         <Card.Body>
                             <div className="mapStyle"><Maps /></div>
@@ -105,3 +115,7 @@ export default class Footer extends Component{
         );
     }
 }
+                        
+                        
+                        
+                        

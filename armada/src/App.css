@@ -60,6 +60,18 @@
   margin-inline: 5px;
   margin-block: 10px;
 }
+.block-Home-2{ 
+  display:flex;
+  overflow: hidden;
+  text-align:center;
+  flex-direction:column;
+  float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-inline: 19px;
+  margin-block: 10px;
+}
 .logo-adop{
   width: 100%;
   max-width: 20rem;
@@ -92,7 +104,7 @@
 
 .fotter-cont{
     justify-content: center;
-    padding: 0px 15px 0px 0px;
+    padding: 0px 5px 0px 5px;
     height: auto;
     display: inline-table;
     margin-left: auto;

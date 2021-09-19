@@ -35,10 +35,10 @@ export default class Home extends Component{
     render() {
         return (
                 <>
-                
                 <div style = {{'width':'100%', 'display': 'block'}}>
+                <Container>
                 <div className = "block-Home-1">
-                    <Card style={{ 'width': '26rem','border':'none' }}>                                    
+                    <Card style={{ 'width': '22rem','border':'none' }}>                                    
                         <Card.Img variant="top"  
                         style={{'width': '19.4rem',
                                 'display': 'block',
@@ -59,13 +59,15 @@ export default class Home extends Component{
                         </Card.Body>
                     </Card>
                     </div>
+                    </Container>
                     <Container>
                     <div className = "block-Home-1">
                         <Slider/>
                     </div>
                     </Container>
+                    <Container>
                     <div className = "block-Home-1">
-                    <Card style={{ 'width': '26rem' }}>                                    
+                    <Card style={{ 'width': '23rem' }}>                                    
                         <Card.Img variant="top"  
                         style={{'width': '19.4rem',
                                 'display': 'block',
@@ -102,6 +104,7 @@ export default class Home extends Component{
                         </Card.Body>
                     </Card>
                     </div>
+                    </Container>
                     </div>
                     <Modal show={this.state.showModal} onHide={this.close}>
                     <Modal.Header closeButton>
