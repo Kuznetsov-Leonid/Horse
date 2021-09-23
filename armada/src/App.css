@@ -72,6 +72,19 @@
   margin-inline: 19px;
   margin-block: 10px;
 }
+.block-About-1{ 
+  display:flex;
+  overflow: hidden;
+  text-align:center;
+  flex-direction:column;
+  float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-inline: 5px;
+  margin-block: 10px;
+}
+
 .logo-adop{
   width: 100%;
   max-width: 20rem;
