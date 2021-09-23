@@ -1,3 +1,9 @@
+/**
+ * Create by Kuznetsov Leonid 
+ * 20:29  23.09.2021
+ */ 
+
+
 import React, {Component} from 'react'
 import { 
         Container, 
@@ -20,12 +26,13 @@ import photo from '../img/logo192.png'
 export default class About extends Component{
     render(){
         return(
+            <>
             <Container>
                 <Container>
                     <CardGroup>
                         <Card style={{'border':'none'}}>
                             <Card.Img variant="top"  
-                                    style={{'width': '25rem',
+                                    style={{'width': '22rem',
                                             'display': 'block',
                                             'margin-left': 'auto',
                                             'margin-right': 'auto'
@@ -38,7 +45,7 @@ export default class About extends Component{
                                 </Card.Text>
                             </Card.Body>
                         </Card>
-                        <Card>
+                        <Card style={{'border':'none'}}>
                         <Card.Body>
                             <Card.Title style={{'text-align':'center'}}><h2>О&nbsp;нас</h2></Card.Title>
                             <ListGroup>
@@ -154,6 +161,7 @@ export default class About extends Component{
                         </CardGroup>
                     </Container>
             </Container>
+            </>
         )
     }
 }

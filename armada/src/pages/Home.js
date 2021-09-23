@@ -4,7 +4,7 @@
  */ 
 
 import React, { Component } from 'react';
-import { Container, Card, ListGroup, ListGroupItem, Form, NavDropdown, Modal, Button, Accordion} from 'react-bootstrap';
+import { Container, Card, ListGroup, ListGroupItem, Form, NavDropdown, Modal, Button, Accordion, CardGroup} from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import photo1 from '../img/chess.png'
 import armadaLogo from '../img/armadaLogo.png';
@@ -35,44 +35,34 @@ export default class Home extends Component{
     render() {
         return (
                 <>
-                <div style = {{'width':'100%', 'display': 'block'}}>
                 <Container>
-                <div className = "block-Home-1">
-                    <Card style={{ 'width': '22rem','border':'none' }}>                                    
+                <CardGroup>
+                    <Card style={{ 'width': '24rem','border':'none' }}>                                    
                         <Card.Img variant="top"  
-                        style={{'width': '19.4rem',
-                                'display': 'block',
-                                'margin-left': 'auto',
-                                'margin-right': 'auto'
-                                }} 
+                        style={{'width': '22rem',
+                        'display': 'block',
+                        'margin-left': 'auto',
+                        'margin-right': 'auto'
+                        }} 
                         src={armadaLogo} />
                         <Card.Body>
-                            <Card.Text>
-                                Конно спортивный клуб
-                            </Card.Text>
-                            <Card.Title>
+                            <Card.Text  style={{'text-align':'center'}}>
+                                <h5>Конно спортивный клуб</h5>
                                 <h1>АРМАДА</h1>
-                            </Card.Title>
-                            <Card.Text>
                                 <h3>"Поэзия в движении"</h3>
                             </Card.Text>
                         </Card.Body>
                     </Card>
-                    </div>
-                    </Container>
-                    <Container>
-                    <div className = "block-Home-1">
+                    <Card>
                         <Slider/>
-                    </div>
-                    </Container>
-                    <Container>
-                    <div className = "block-Home-1">
-                    <Card style={{ 'width': '23rem' }}>                                    
+                    </Card>
+                    <Card style={{ 'width': '24rem','border':'none' }}>                                    
                         <Card.Img variant="top"  
-                        style={{'width': '19.4rem',
-                                'display': 'block',
-                                'margin-left': 'auto',
-                                'margin-right': 'auto'}} 
+                        style={{'width': '17rem',
+                        'display': 'block',
+                        'margin-left': 'auto',
+                        'margin-right': 'auto'
+                        }}  
                         src={photo1} />
                         <Card.Body>
                             <Card.Title>Важные новости!</Card.Title>
@@ -99,13 +89,17 @@ export default class Home extends Component{
                                 </Accordion.Item>
                                 </Accordion>
                         <Card.Body/>
-                        <Card.Link href="#">Карантин</Card.Link>
+                            <Card.Text style={{'text-align':'center'}}>
+                            <Card.Link href="#">Карантин</Card.Link>
                             <Card.Link href="#">Вакцинация</Card.Link>
+                            </Card.Text>
                         </Card.Body>
                     </Card>
-                    </div>
+                    </CardGroup>
                     </Container>
-                    </div>
+
+
+
                     <Modal show={this.state.showModal} onHide={this.close}>
                     <Modal.Header closeButton>
                     <Modal.Title>Take order</Modal.Title>
