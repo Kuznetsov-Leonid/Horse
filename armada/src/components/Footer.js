@@ -105,7 +105,9 @@ export default class Footer extends Component{
                                     'height':'20rem'
                                     }}>
                         <Card.Body>
-                            <div className="mapStyle"><Maps /></div>
+                            <div className="mapStyle">
+                                <p>map</p>
+                            </div>
                         </Card.Body>
                         </Card> 
                         </div>
