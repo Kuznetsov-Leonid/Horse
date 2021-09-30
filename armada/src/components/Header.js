@@ -77,20 +77,31 @@ export default class Header extends Component{
             </Navbar>
             <Modal show={this.state.showModal} onHide={this.close}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Take order</Modal.Title>
+                    <Modal.Title>Обратная связь</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                        <Form.Label>Email address</Form.Label>
+                        <Form.Label>Имя *</Form.Label>
+                        <Form.Control type="Name" placeholder="Name" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                        <Form.Label>Электронная почта *</Form.Label>
                         <Form.Control type="email" placeholder="name@example.com" />
                     </Form.Group>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                        <Form.Label>Номер телефона</Form.Label>
+                        <Form.Control type="phone" placeholder="+7999 999 99 99" />
+                    </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Example textarea</Form.Label>
+                        <Form.Label>Сообщение *</Form.Label>
                         <Form.Control as="textarea" rows={3} />
                     </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                        <Form.Check type="checkbox" label="Согласие на обработку персональных данных *" />
+                    </Form.Group>
                     <Button variant="primary" type="submit">
-                    Submit
+                    Отправить
                     </Button>
                     </Form>
                 </Modal.Body>
