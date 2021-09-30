@@ -1,3 +1,7 @@
+/**
+ * Create by Kuznetsov Leonid 
+ * 30.09.2021
+ */ 
 import React from 'react'
 import Spinner from 'react-bootstrap/Spinner'
 import { Container} from 'react-bootstrap';

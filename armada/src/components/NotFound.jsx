@@ -1,5 +1,8 @@
+/**
+ * Create by Kuznetsov Leonid 
+ * 30.09.2021
+ */ 
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Button, Container, Card, CardGroup } from 'react-bootstrap';
 import paje404 from '../img/coweboy.png';
 
