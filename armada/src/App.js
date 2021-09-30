@@ -4,6 +4,7 @@ import './App.css';
 import Land from './components/Land';
 import Loading from './components/Loadin';
 
+
 function App() {
             const [isLoading, setIsLoading] = useState(true);
             useEffect (() =>{
@@ -15,7 +16,7 @@ function App() {
   return (
     <>
     <div>
-    {isLoading==true?<Loading/>:<Land/>}
+      {isLoading==true?<Loading/>:<Land/>}
     </div>
     </>
   );

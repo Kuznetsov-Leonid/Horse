@@ -17,6 +17,7 @@ import Service1 from '../pages/Service1';
 import Service2 from '../pages/Service2';
 import Service3 from '../pages/Service3';
 import Service4 from '../pages/Service4';
+import NotFound from '../components/NotFound';
 
 export default class Header extends Component{
     constructor(props) {
@@ -115,6 +116,7 @@ export default class Header extends Component{
                     <Route exact path ="/service2" component = {Service2} />
                     <Route exact path ="/service3" component = {Service3} />
                     <Route exact path ="/service4" component = {Service4} />
+                    <Route exact path="" component={NotFound} />
                 </Switch>
             </Router>
             
