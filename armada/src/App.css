@@ -137,8 +137,12 @@
   animation: .75s linear infinite spinner-border;
 }
 .Load{
-  height: 35rem;
+  height: 40rem;
   display: flex;
   align-items: center;
   justify-content: center
+}
+.CardLayout{
+  border: none;
+  margin-top: 1rem;
 }

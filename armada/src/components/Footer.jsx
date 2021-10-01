@@ -1,36 +1,21 @@
 /**
  * Create by Kuznetsov Leonid 
- * 9:00  13.09.2021
+ * 1.10.2021
  */ 
-import React, { Component } from 'react';
-import { Container, Card, CardGroup, Row, ListGroup, ListGroupItem, ButtonToolbar, ButtonGroup, Button } from 'react-bootstrap';
-import { BrowserRouter as Router, Switch, Route, Link, Google } from 'react-router-dom';
-import Maps from '../components/Maps';
-
-import vk from '../img/vk.png';
-import insta from '../img/insta.png';
-import face from '../img/facebook.png';
-import twit from '../img/twitter.png';
-
-
-export default class Footer extends Component{  
-    render() {
-        return(
+    import React from 'react';
+    import { Container, Card, CardGroup, Row, ListGroup, ListGroupItem, ButtonToolbar, ButtonGroup, Button } from 'react-bootstrap';
+    import { BrowserRouter as Router, Switch, Route, Link, Google } from 'react-router-dom';
+    import Maps from '../components/Maps';
+    import vk from '../img/vk.png';
+    import insta from '../img/insta.png';
+    import face from '../img/facebook.png';
+    import twit from '../img/twitter.png';
+    const Footer = () =>{
+        return (
             <>
-            
-                <Container sticky = "bottom" fluid style = {{
-                    'display':'flex',
-                    'backgroundColor':'#212529',
-                    'color':'white',
-                    'width':'100%',
-                    'height':'auto'
-                    }}>
-                    <Container className = "fotter-cont">
-                            <div className="block-Home-2">
-                        <Card style={{
-                            'width': '22rem',
-                            'padding':'5px'
-                        }}>
+                <Container sticky = "bottom" fluid style = {{'backgroundColor':'#212529'}}>
+                    <CardGroup>
+                        <Card className="CardLayout" style={{'margin-bottom': '1rem'}}>
                         <ListGroup className="list-group-flush">
                         <ListGroupItem style={{
                                 'display': 'block',
@@ -75,9 +60,7 @@ export default class Footer extends Component{
                         <Card.Link href="#">Another Link</Card.Link>
                         </Card.Body>
                         </Card>
-                        </div>
-                        <div className="block-Home-2"> 
-                        <Card style={{'padding':'31.3px', 'width':'22rem'}}>
+                        <Card className="CardLayout" style={{'margin-bottom': '1rem'}}>
                         <Card.Body>
                             <ListGroup className="list-group-flush">
                                 <ListGroupItem>
@@ -96,28 +79,18 @@ export default class Footer extends Component{
                                 </ListGroupItem>
                             </ListGroup>
                         </Card.Body>
-                        </Card> 
-                        </div>
-                        <div className="block-Home-2">
-                        <Card style={{
-                                    'padding':'0px',
-                                    'width': '22rem',
-                                    'height':'20rem'
-                                    }}>
+                        </Card>
+                        <Card className="CardLayout" style={{'margin-bottom': '1rem'}}>
                         <Card.Body>
                             <div className="mapStyle">
                                 <p>map</p>
                             </div>
                         </Card.Body>
-                        </Card> 
-                        </div>
-                    </Container>
+                        </Card>
+                    </CardGroup>
                 </Container>
             </>
-        );
+        )
     }
-}
-                        
-                        
-                        
-                        
+    
+    export default Footer

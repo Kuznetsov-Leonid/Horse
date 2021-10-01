@@ -10,10 +10,14 @@ const NotFound = () =>{
     return(
         <Container>
             <CardGroup>
-                <Card style={{ border:'none' }}>
-                <Card.Img  src={paje404} style={{ width: '25rem' }}/>
+                <Card className="CardLayout" style={{'margin-bottom': '3rem'}}>
+                <Card.Img  src={paje404} style={{ width: '20.4rem' }}/>
                 </Card>
-                <Card Card style={{ border:'none', margin: '90px 0px 90px 0px', 'text-align':'center' }}>
+                <Card Card className="CardLayout" style={{ 
+                    'margin': '90px 0px 90px 0px',
+                    'text-align':'center',
+                    'margin-bottom': '3rem' 
+                    }}>
                 <Card.Header>
                     <h1> Упс 404 :)</h1>
                 </Card.Header>
