@@ -14,7 +14,7 @@
         return (
             <>
                 <Container sticky = "bottom" fluid style = {{'backgroundColor':'#212529'}}>
-                    <CardGroup>
+                    <CardGroup style={{'font-family': '"Roboto Condensed"','letter-spacing': '1px'}}>
                         <Card className="CardLayout" style={{'margin-bottom': '1rem'}}>
                         <ListGroup className="list-group-flush">
                         <ListGroupItem style={{

@@ -26,7 +26,10 @@
     return (
         <>
         <Router>
-            <Navbar sticky = "top" collapseOnSelect expand = "lg" bg = "primary" variant = "light">
+            <Navbar sticky = "top" collapseOnSelect expand = "lg"
+            bg = "primary" 
+            variant = "light" 
+            style={{'font-family': '"Roboto Condensed"','letter-spacing': '1px'}}>
                 <Container>
                     <Navbar.Brand href = "/">
                         <img 
