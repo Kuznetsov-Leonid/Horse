@@ -26,10 +26,8 @@
     return (
         <>
         <Router>
-            <Navbar sticky = "top" collapseOnSelect expand = "lg"
-            bg = "primary" 
-            variant = "light" 
-            style={{'font-family': '"Roboto Condensed"','letter-spacing': '1px'}}>
+            <Navbar sticky = "top" collapseOnSelect expand = "lg" 
+            style={{'font-family': '"Roboto Condensed"','letter-spacing': '1px', 'background-color': '#ff8000'}}>
                 <Container>
                     <Navbar.Brand href = "/">
                         <img 
@@ -38,7 +36,7 @@
                             width = "40"
                             className = "d-inline-block align-top"
                             alt = "Logo"
-                        />{' KSK Armada'}
+                        />{' КСК Армада'}
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls = "responsive-navbar-nav" />
                     <Navbar.Collapse id = "responsive-navbar-nav" >
