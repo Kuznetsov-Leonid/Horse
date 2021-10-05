@@ -14,13 +14,13 @@
 //
 
 (function () {
-  
+
     // Scroll Variables (tweakable)
     var defaultOptions = {
     //Настройка параметров скорости скролла страницы сайта, дефолтные настройки справа в коментах...
         // Scrolling Core
         frameRate        : 150, // [Hz]
-        animationTime    : 600, // [ms]
+        animationTime    : 700, // [ms]
         stepSize         : 80, // [px]
     
         // Pulse (less tweakable)

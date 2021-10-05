@@ -14,6 +14,7 @@
         return (
             <>
                 <Container sticky = "bottom" fluid style = {{'backgroundColor':'#212529'}}>
+                    <Container>
                     <CardGroup style={{'font-family': '"Roboto Condensed"','letter-spacing': '1px'}}>
                         <Card className="CardLayout" style={{'margin-bottom': '1rem'}}>
                         <ListGroup className="list-group-flush">
@@ -56,8 +57,6 @@
                                 'margin-left': 'auto',
                                 'margin-right': 'auto'
                                 }}>
-                        <Card.Link href="#">Card Link</Card.Link>
-                        <Card.Link href="#">Another Link</Card.Link>
                         </Card.Body>
                         </Card>
                         <Card className="CardLayout" style={{'margin-bottom': '1rem'}}>
@@ -83,14 +82,18 @@
                         <Card className="CardLayout" style={{'margin-bottom': '1rem'}}>
                         <Card.Body>
                             <div className="mapStyle">
-                                <p>map</p>
+                                <Maps/>
                             </div>
                         </Card.Body>
                         </Card>
                     </CardGroup>
+                    </Container>
                 </Container>
             </>
         )
     }
     
     export default Footer
+
+    //<Card.Link href="#">Card Link</Card.Link>
+    //<Card.Link href="#">Another Link</Card.Link>

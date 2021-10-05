@@ -67,21 +67,21 @@
                             <Accordion>
                                 <Accordion.Item eventKey="0">
                                 <Accordion.Header>Ведётся набор участников на соревнования</Accordion.Header>
-                                <Accordion.Body>
+                                <Accordion.Body style={{'text-align': 'center'}}>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     <Button variant="warning" className = "mr-2" onClick={handleShow}>Оставить заявку на участие</Button>{' '}
                                 </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="1">
                                 <Accordion.Header>Вакцинация против бешенства</Accordion.Header>
-                                <Accordion.Body>
+                                <Accordion.Body style={{'text-align': 'center'}}>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     <Button variant="warning" className = "mr-2" onClick={handleShow}>Оставить заявку на вакцинацию</Button>{' '}
                                 </Accordion.Body>
                                 </Accordion.Item>
-                                <Accordion.Item eventKey="2">
+                                <Accordion.Item eventKey="2" >
                                 <Accordion.Header>Завоз овса на 20.09.21</Accordion.Header>
-                                <Accordion.Body>
+                                <Accordion.Body style={{'text-align': 'center'}}>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                 </Accordion.Body>
                                 </Accordion.Item>

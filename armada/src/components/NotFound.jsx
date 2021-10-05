@@ -9,6 +9,7 @@ import paje404 from '../img/coweboy.png';
 const NotFound = () =>{
     return(
         <Container>
+            
             <CardGroup style={{'font-family': '"Roboto Condensed"','letter-spacing': '1px'}}>
                 <Card className="CardLayout" style={{'margin-bottom': '3rem'}}>
                 <Card.Img  src={paje404} style={{ width: '20.4rem' }}/>
@@ -31,6 +32,7 @@ const NotFound = () =>{
                 </Card.Body>
                 </Card>
             </CardGroup>
+            
         </Container>
         
     )

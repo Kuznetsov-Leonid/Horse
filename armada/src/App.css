@@ -154,3 +154,7 @@
   border: none;
   margin-top: 1rem;
 }
+.carousel-inner{
+  border: 0px solid;
+  border-radius: 10px;
+}
