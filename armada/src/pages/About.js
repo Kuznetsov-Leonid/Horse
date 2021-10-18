@@ -32,11 +32,12 @@ export default class About extends Component{
                     <CardGroup>
                         <Card style={{'border':'none'}}>
                             <Card.Img variant="top"  
-                                    style={{'width': '22rem',
-                                            'display': 'block',
-                                            'margin-left': 'auto',
-                                            'margin-right': 'auto'
-                                            }} 
+                                    style={{
+                                        'width': '20.4rem',
+                                        'display': 'block',
+                                        'margin-left': 'auto',
+                                        'margin-right': 'auto'
+                                        }} 
                                     src={horse} />
                             <Card.Body>
                                 <Card.Text>

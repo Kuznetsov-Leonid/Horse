@@ -1,3 +1,7 @@
+/**
+ * Create by Kuznetsov Leonid 
+ * 1.10.2021
+ */ 
 import React, {Component} from 'react'
 import { 
     Container, 
