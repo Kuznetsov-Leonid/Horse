@@ -1,0 +1,160 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ff8000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.nav-link :hover{
+  color: #8d5b2a;
+}
+
+
+.App-link {
+  color: gray;
+}
+
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: #fd7e14;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.linkColor{
+  color: black;
+  text-decoration: none;
+}
+
+.carousel {
+  position: relative;
+  max-width: 25rem;
+}
+
+.block-Home-1{ 
+  display:flex;
+  overflow: hidden;
+  text-align:center;
+  flex-direction:column;
+  float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-inline: 5px;
+  margin-block: 10px;
+}
+.block-Home-2{ 
+  display:flex;
+  overflow: hidden;
+  text-align:center;
+  flex-direction:column;
+  float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-inline: 19px;
+  margin-block: 10px;
+}
+.block-About-1{ 
+  display:flex;
+  overflow: hidden;
+  text-align:center;
+  flex-direction:column;
+  float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-inline: 5px;
+  margin-block: 10px;
+}
+
+.logo-adop{
+  width: 100%;
+  max-width: 20rem;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.social{
+  display:flex;
+  overflow: hidden;
+  text-align:center;
+  flex-direction:column;
+  float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mapStyle{
+  position: relative;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fotter-cont{
+    justify-content: center;
+    padding: 0px 5px 0px 5px;
+    height: auto;
+    display: inline-table;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.spinner-border{
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  vertical-align: -.125em;
+  border: 0.35em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: .75s linear infinite spinner-border;
+  animation: .75s linear infinite spinner-border;
+}
+.Load{
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.CardLayout{
+  border: none;
+  margin-top: 1rem;
+}
+.carousel-inner{
+  border: 0px solid;
+  border-radius: 10px;
+}
