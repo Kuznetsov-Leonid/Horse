@@ -22,7 +22,7 @@
         const [show, setShow] = useState(false);
         const handleClose = () => setShow(false);
         const handleShow = () => setShow(true);
-
+        
     return (
         <>
         <Router>
@@ -78,23 +78,23 @@
         <Modal.Body>
             <Form>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                    <Form.Label>Имя *</Form.Label>
-                    <Form.Control type="Name" placeholder="Name" />
+                    <Form.Label>Имя</Form.Label>
+                    <Form.Control type="text" name="fio" placeholder="Name" required/>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                    <Form.Label>Электронная почта *</Form.Label>
-                    <Form.Control type="email" placeholder="name@example.com" />
+                    <Form.Label>Электронная почта</Form.Label>
+                    <Form.Control type="text" name="email" placeholder="name@example.com" required/>
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1" required>
                     <Form.Label>Номер телефона</Form.Label>
-                    <Form.Control type="phone" placeholder="+7999 999 99 99" />
+                    <Form.Control type="text" name="phone" placeholder="+7999 999 99 99" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                    <Form.Label>Сообщение *</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
+                    <Form.Label>Сообщение</Form.Label>
+                    <Form.Control as="textarea" name="message" rows={3} required/>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Согласие на обработку персональных данных *" />
+                    <Form.Check type="checkbox" label="Согласие на обработку персональных данных *" required/>
                 </Form.Group>
             </Form>
         </Modal.Body>
