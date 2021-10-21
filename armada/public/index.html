@@ -26,12 +26,17 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root">
-    </div>
+    <div id="root"></div>
     <script src="../src/components/SmoothScroll.js"></script> <!--Скрипты для плавного скролла страницы-->
     <script src="../src/JSON/bower.json"></script> <!--Библиотека для плавного скролла-->
     <script src="../src/JSON/package.json"></script> <!--Библиотека для плавного скролла-->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+          emailjs.init("user_RBIjAEvAriwtz46L0hxec");
+    })();
+    </script>
   </body>
 </html>
 

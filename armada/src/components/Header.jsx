@@ -6,6 +6,7 @@
     import { Button, Container, Nav, Navbar, Form, NavDropdown, Modal } from 'react-bootstrap';
     import logo from '../img/stick-man-riding-on-a-horse.png';
     import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+    import { init } from 'emailjs-com';
 
     import Home from '../pages/Home';
     import Gallery from '../pages/Gallery';
@@ -22,7 +23,42 @@
         const [show, setShow] = useState(false);
         const handleClose = () => setShow(false);
         const handleShow = () => setShow(true);
+
+    const initialFormData = Object.freeze({
+            username: "",
+            email: "",
+            mobile: "",
+            query: ""
+        });
+    
+    const [formData, updateFormData] = React.useState(initialFormData);
+
+    const handleChange = (e) => {
+        updateFormData({
+            ...formData,
+            [e.target.name]: e.target.value.trim()
+            });
+        };
+    
+    const handleSubmit = (e) => {
+            e.preventDefault()
+            alert(`Сообщение отправлено. Спасибо за обращение, мы обязательно с Вами свяжимся!`);
+            const templateId = 'template_8bb7hoc';
+            const serviceID = "service_jjxeolh";
+            sendFeedback(serviceID, templateId, { from_name: formData.name, mobile: formData.mobile, message_html: formData.query, email: formData.email })
         
+            console.log(formData);
+        };
+
+    const sendFeedback = (serviceID, templateId, variables) => {
+            window.emailjs.send(
+                serviceID, templateId,
+                variables
+            ).then(res => {
+                console.log('Email successfully sent!')
+            })
+                .catch(err => console.error('There has been an Error.', err))
+        }
     return (
         <>
         <Router>
@@ -77,21 +113,21 @@
         </Modal.Header>
         <Modal.Body>
             <Form>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                    <Form.Label>Имя</Form.Label>
-                    <Form.Control type="text" name="fio" placeholder="Name" required/>
+                <Form.Group className="mb-3" controlId="formGridName">
+                    <Form.Label>Имя*</Form.Label>
+                    <Form.Control type="text" onChange= {handleChange} name="name" placeholder="Name" required/>
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                    <Form.Label>Электронная почта</Form.Label>
-                    <Form.Control type="text" name="email" placeholder="name@example.com" required/>
+                <Form.Group className="mb-3" controlId="formGridEmail">
+                    <Form.Label>Электронная почта*</Form.Label>
+                    <Form.Control type="text" onChange= {handleChange} name="email" placeholder="name@example.com" required/>
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1" required>
-                    <Form.Label>Номер телефона</Form.Label>
-                    <Form.Control type="text" name="phone" placeholder="+7999 999 99 99" />
+                <Form.Group className="mb-3" controlId="formGridMobile" required>
+                    <Form.Label>Номер телефона*</Form.Label>
+                    <Form.Control type="text" onChange= {handleChange} name="mobile" placeholder="+7999 999 99 99" />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                    <Form.Label>Сообщение</Form.Label>
-                    <Form.Control as="textarea" name="message" rows={3} required/>
+                <Form.Group className="mb-3" id="formGridQuery">
+                    <Form.Label>Сообщение*</Form.Label>
+                    <Form.Control as="textarea" onChange= {handleChange} name="query" rows={3} required/>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Согласие на обработку персональных данных *" required/>
@@ -100,7 +136,7 @@
         </Modal.Body>
         <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>Закрыть</Button>
-            <Button variant="primary" type="submit" onClick={handleClose}>Отправить</Button>
+            <Button variant="primary" type="submit" onClick={handleClose, handleSubmit}>Отправить</Button>
         </Modal.Footer>
         </Modal>
         </>
