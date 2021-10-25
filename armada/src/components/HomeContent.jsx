@@ -9,7 +9,7 @@
     import armadaLogo from '../img/logogtype.jpg';
     import Slider from './Slider';
     import Loading from './Loadin';
-    import Lable from '../img/lable.png'
+    import Lable from '../img/Untitled.png'
 
     const HomeContent = () =>{
             //Скрипты модального окна
@@ -26,12 +26,18 @@
             })
         return (
             <>
-            <Container>
+            
                 <CardGroup>
                 <Card className="CardLayout" style={{'margin-bottom': '3rem'}}>                                    
                         <Card.Body>
-                        <Card.Img variant="top"  
-                        src={armadaLogo} />
+                        <Card.Img variant="top" 
+                        style={{
+                            'width': '29rem',
+                            'display': 'block',
+                            'margin-left': 'auto',
+                            'margin-right': 'auto'
+                            }}   
+                        src={Lable} />
                         </Card.Body>
                     </Card>
                     <Card className="CardLayout" style={{'margin-bottom': '3rem'}}>
@@ -84,7 +90,7 @@
                         </Card.Body>
                     </Card>
                 </CardGroup>
-            </Container>
+            
             <Modal show={show} onHide={handleClose} animation={false}>
             <Modal.Header closeButton>
                 <Modal.Title>Обратная связь</Modal.Title>
