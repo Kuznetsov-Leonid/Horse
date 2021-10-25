@@ -5,11 +5,8 @@
     import React from 'react';
     import { Container, Card, CardGroup, Row, ListGroup, ListGroupItem, ButtonToolbar, ButtonGroup, Button } from 'react-bootstrap';
     import { BrowserRouter as Router, Switch, Route, Link, Google } from 'react-router-dom';
-    import Maps from '../components/Maps';
     import vk from '../img/vk.png';
     import insta from '../img/insta.png';
-    import face from '../img/facebook.png';
-    import twit from '../img/twitter.png';
     import Iframe from '../components/Iframe';
     const Footer = () =>{
         return (
