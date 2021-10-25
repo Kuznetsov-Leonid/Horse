@@ -26,8 +26,6 @@
         return (
             <>
             <Container>
-                <h5 style={{'color':'red','text-align': 'center'}}>Данный сайт на текущий момент носит информационный характер и находится в разработке.
-                    Для связи с действущей организацией КСК Армада можете позвонить по номеру указанному внизу) </h5>
                 <CardGroup>
                 <Card className="CardLayout" style={{'margin-bottom': '3rem'}}>                                    
                         <Card.Img variant="top"  

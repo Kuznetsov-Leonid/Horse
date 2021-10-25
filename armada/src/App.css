@@ -158,3 +158,8 @@
   border: 0px solid;
   border-radius: 10px;
 }
+
+.list-group-flush{
+  justify-content: center;
+  text-align:center;
+}

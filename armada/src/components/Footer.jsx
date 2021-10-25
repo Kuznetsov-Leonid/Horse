@@ -63,18 +63,18 @@
                         <Card.Body>
                             <ListGroup className="list-group-flush">
                                 <ListGroupItem>
-                                    <Card.Link  href="#">Вакансии</Card.Link> <br />
+                                    <Button variant="link" href="https://goo.gl/maps/8Dnrjdv5yeGwhYBZ8" target="_blank">
+                                        Новорязанское шоссе, дер. Дурниха Раменского района, 25 км от МКАД.
+                                    </Button>
                                 </ListGroupItem>
                                 <ListGroupItem>
-                                    <Card.Link  href="#">Политика конфиденциальности</Card.Link> <br />
+                                    <Button variant="link" href="/Contacts">Наши контакты</Button><br />
                                 </ListGroupItem>
                                 <ListGroupItem>
-                                    <Card.Link  href="#">О сайте</Card.Link> <br />
+                                    <Button variant="link" href="/Vacancy">Вакансии</Button><br />
                                 </ListGroupItem>
                                 <ListGroupItem>
-                                    <Card.Link  target="_blank" href="https://goo.gl/maps/8Dnrjdv5yeGwhYBZ8">
-                                    Новорязанское шоссе, дер. Дурниха Раменского района, 25 км от МКАД.
-                                    </Card.Link>
+                                    <Button variant="link" href="/AboutSite">О сайте</Button><br />
                                 </ListGroupItem>
                             </ListGroup>
                         </Card.Body>

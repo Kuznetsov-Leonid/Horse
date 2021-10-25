@@ -16,6 +16,9 @@
     import Service3 from '../pages/Service3';
     import Service4 from '../pages/Service4';
     import NotFound from './NotFound';
+    import Vacancy from '../pages/Vacancy';
+    import Contacts from '../pages/Contacts'; 
+    import AboutSite from '../pages/AboutSite';
 
     const Header = () =>{
         //Скрипты модального окна
@@ -68,6 +71,9 @@
                     <Route exact path ="/service2" component = {Service2} />
                     <Route exact path ="/service3" component = {Service3} />
                     <Route exact path ="/service4" component = {Service4} />
+                    <Route exact path ="/Vacancy" component = {Vacancy} />
+                    <Route exact path ="/Contacts" component = {Contacts} />
+                    <Route exact path ="/AboutSite" component = {AboutSite} />
                     <Route exact path="" component={NotFound} />
                 </Switch>
             </Router>
