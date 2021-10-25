@@ -10,12 +10,16 @@
     import insta from '../img/insta.png';
     import face from '../img/facebook.png';
     import twit from '../img/twitter.png';
+    import Iframe from '../components/Iframe';
     const Footer = () =>{
         return (
             <>
                 <Container sticky = "bottom" fluid style = {{'backgroundColor':'#212529'}}>
                     <Container>
-                    <CardGroup style={{'font-family': '"Roboto Condensed"','letter-spacing': '1px'}}>
+                    <CardGroup style={{
+                        'font-family': '"Roboto Condensed"',
+                        'letter-spacing': '1px',
+                        'padding':'1px 0px 1px 0px'}}>
                         <Card className="CardLayout" style={{'margin-bottom': '1rem'}}>
                         <ListGroup className="list-group-flush">
                         <ListGroupItem style={{
@@ -36,12 +40,6 @@
                                 variant="secondary">
                                     <img src={insta} alt="none"/>
                                     </Button>{' '}
-                                <Button href="#" target="_blank" variant="secondary">
-                                    <img src={face} alt="none"/>
-                                    </Button>{' '}
-                                <Button href="#" target="_blank" variant="secondary">
-                                    <img src={twit} alt="none"/>
-                                    </Button>
                                 </ButtonGroup>
                                 </ButtonToolbar>
                         </ListGroupItem>
@@ -68,13 +66,13 @@
                                     </Button>
                                 </ListGroupItem>
                                 <ListGroupItem>
-                                    <Button variant="link" href="/Contacts">Наши контакты</Button><br />
+                                    <Button variant="link" href="none">Наши контакты</Button><br />
                                 </ListGroupItem>
                                 <ListGroupItem>
                                     <Button variant="link" href="/Vacancy">Вакансии</Button><br />
                                 </ListGroupItem>
                                 <ListGroupItem>
-                                    <Button variant="link" href="/AboutSite">О сайте</Button><br />
+                                    <Button variant="link" href="none">О сайте</Button><br />
                                 </ListGroupItem>
                             </ListGroup>
                         </Card.Body>
@@ -82,7 +80,7 @@
                         <Card className="CardLayout" style={{'margin-bottom': '1rem'}}>
                         <Card.Body>
                             <div className="mapStyle">
-                                <Maps/>
+                                <Iframe/>
                             </div>
                         </Card.Body>
                         </Card>

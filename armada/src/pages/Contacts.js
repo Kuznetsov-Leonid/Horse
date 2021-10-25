@@ -16,13 +16,13 @@ import {
         Accordion, 
         CardGroup} from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
+import Iframe from '../components/Iframe';
 
 export default class Contacts extends Component{
     render(){
         return(
-            <>
-                <p>Contacts</p>
+            <>  
+                <p>hello world</p>
             </>
         )
     }
