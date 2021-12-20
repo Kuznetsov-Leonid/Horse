@@ -6,7 +6,20 @@
   height: 40vmin;
   pointer-events: none;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +48,149 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Car-bg{
+  background: transparent;
+  border: none;
+}
+
+/*Header*/
+.me-auto{
+  text-align: center;
+  margin-left: auto;
+}
+.headerBG{
+  background-color: #1E212C;
+}
+.linkColor{
+  text-decoration: none;
+  color: white;
+  opacity: 70%;
+}
+.linkColor:hover{
+  opacity: 100%;
+  color: white;
+}
+.active{
+  opacity: 100%;
+}
+.Get-con{
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+}
+
+/*Fouter*/
+.Background-color-fouter{
+  background-color: #1E212C;
+}
+.Title-card{
+  /* h6 */
+  padding-left: 14px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  /* white */
+  color: #FFFFFF;
+}
+.Title-card-2{
+    /* h6 */
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* white */
+    color: #FFFFFF;
+}
+/*------Button link style------*/
+
+.pg-0{padding: 0px 20px 20px 0px}
+
+.Fa{width: 11,58px; height: 22px;}
+.Tw{width: 21px; height: 16,33px;}
+.You{width: 24px; height: 16,8px;}
+.Tel{width: 22px; height: 20px;}
+.Inst{width: 20px; height: 20px;}
+.In{width: 20px; height: 20px;}
+
+.img-button-link{opacity: 0.6;}
+.img-button-link:hover{opacity: 1;}
+
+/*---------------------------*/
+.Card-three-txt{
+  opacity: 0.6;
+  display: inline;
+  /* base/regular */
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  /* identical to box height, or 26px */
+  /* white */
+  color: #FFFFFF;
+}
+.Ph-1{
+  width: 9.33px;
+  height: 14.77px;
+  position: relative;
+  bottom: 1px;
+  margin-right: 10px;
+}
+.Ma-1{
+  width: 14.33px; 
+  height: 11.33px;
+  position: relative;
+  bottom: 1px;
+  margin-right: 6px;
+}
+.button-link-card{
+  /* base/regular */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  /* identical to box height, or 26px */
+  display: flex;
+  align-items: center;
+  /* white */
+  color: #FFFFFF;
+  opacity: 0.6;
+  text-decoration: none;
+  padding: 0px;
+  width: 120px;
+}
+.button-link-card:hover{
+  opacity: 1;
+  color: #FFFFFF;
+}
+#mt15{
+  margin-top: 15px;
+}
+.form-area-style{
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-right: 10px;
+}
+.fouter-copir-txt{
+  /* extrasmall/regular */
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+  /* white */
+  color: black;
+}
+.Background-color-sub-fouter{
+  background-color: #656872;
+  height: 30px;
+}
+#Equestrian{
+  height: 30px;
+  width: 33px;
+  position: relative;
+  left: 7px;
 }

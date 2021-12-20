@@ -1,0 +1,18 @@
+.home-bg{
+    background-color: rgba(236, 128, 128, 0.5);
+}
+.imgLogo{
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 70px;
+}
+.Services{
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    margin-left: 35px;
+}
+.btn-pj{
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
