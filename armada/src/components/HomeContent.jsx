@@ -6,9 +6,10 @@
     import { Container, Card, Form, Button, Accordion, CardGroup } from 'react-bootstrap';
     import Modal from 'react-bootstrap/Modal';
     import photo1 from '../img/chess.png';
-    import armadaLogo from '../img/armadaLogo.png';
+    import armadaLogo from '../img/logogtype.jpg';
     import Slider from './Slider';
     import Loading from './Loadin';
+    import Lable from '../img/Untitled.png'
 
     const HomeContent = () =>{
             //Скрипты модального окна
@@ -25,23 +26,18 @@
             })
         return (
             <>
-            <Container>
+            
                 <CardGroup>
                 <Card className="CardLayout" style={{'margin-bottom': '3rem'}}>                                    
-                        <Card.Img variant="top"  
-                        style={{
-                        'width': '16rem',
-                        'display': 'block',
-                        'margin-left': 'auto',
-                        'margin-right': 'auto'
-                        }} 
-                        src={armadaLogo} />
                         <Card.Body>
-                            <Card.Text  style={{'text-align':'center'}}>
-                                <h5>Конно спортивный клуб</h5>
-                                <h1>АРМАДА</h1>
-                                <h3>"Поэзия в движении"</h3>
-                            </Card.Text>
+                        <Card.Img variant="top" 
+                        style={{
+                            'width': '29rem',
+                            'display': 'block',
+                            'margin-left': 'auto',
+                            'margin-right': 'auto'
+                            }}   
+                        src={Lable} />
                         </Card.Body>
                     </Card>
                     <Card className="CardLayout" style={{'margin-bottom': '3rem'}}>
@@ -94,7 +90,7 @@
                         </Card.Body>
                     </Card>
                 </CardGroup>
-            </Container>
+            
             <Modal show={show} onHide={handleClose} animation={false}>
             <Modal.Header closeButton>
                 <Modal.Title>Обратная связь</Modal.Title>

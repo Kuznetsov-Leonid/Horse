@@ -46,7 +46,6 @@
                         <Nav className = "me-auto">
                         <Nav.Link><Link to = "/" className = "linkColor">Главная</Link></Nav.Link>
                         <Nav.Link><Link to = "/about" className = "linkColor">О нас</Link></Nav.Link>
-                        <Nav.Link><Link to = "/sports" className = "linkColor">Спортсменам</Link></Nav.Link>
                         <Nav.Link><Link to = "/gallery" className = "linkColor">Галерея</Link></Nav.Link>
                         <NavDropdown title="Услуги" id="basic-nav-dropdown" className = "linkColor">
                             <NavDropdown.Item><Link to = "/service1" className = "linkColor">Service1</Link></NavDropdown.Item>
@@ -114,3 +113,4 @@
 }
 
 export default Header
+//<Nav.Link><Link to = "/sports" className = "linkColor">Спортсменам</Link></Nav.Link>
