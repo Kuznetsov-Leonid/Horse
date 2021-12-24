@@ -4,8 +4,10 @@ import HomeBuild from '../Components/Home/homeBuild';
 export default class Home extends Component{
     render(){
         return(
-            <>
-                <HomeBuild/>
+            <> 
+                <div className='main'>
+                    <HomeBuild/>
+                </div>
             </>
         )
     }

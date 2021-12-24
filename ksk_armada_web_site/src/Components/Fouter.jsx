@@ -35,7 +35,7 @@ const Fouter = () =>{
                         </Card>
                         <Card style = {{'background': 'transparent', 'border': 'none'}}>
                             <h6 className = "Title-card-2">НАШИ КОНТАКТЫ</h6>
-                            <p className = "Card-three-txt"><img className = "Ph-1" src={Phone} alt="." />(405) 555-0128</p>
+                            <p className = "Card-three-txt"><img className = "Ph-1" src={Phone} alt="." />+7 (967) 017-9963</p>
                             <p className = "Card-three-txt"><img className = "Ma-1" src={Mail} alt="." />hello@createx.com</p>
                         </Card>
                         <Card style = {{'background': 'transparent', 'border': 'none'}}>

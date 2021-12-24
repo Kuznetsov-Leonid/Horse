@@ -2,7 +2,8 @@
  * Create by Kuznetsov Leonid 
  * 20.12.2021
  */
-import React, { useState } from 'react';
+import React from 'react';
+
 import { Button, Container, Nav, Navbar, Form, NavDropdown, Modal } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, NavLink, Routes } from 'react-router-dom';
 
@@ -13,11 +14,9 @@ import AboutUs from "../Pajes/AboutUs";
 import Contacts from "../Pajes/Contacts";
 import NotFound from "../Pajes/NotFound";
 
+//Email ksk-armada@yahoo.com
+
 const Header = () =>{
-    // //Скрипты модального окна
-    // const [show, setShow] = useState(false);
-    // const handleClose = () => setShow(false);
-    // const handleShow = () => setShow(true);
 
     return (
         <>
@@ -31,9 +30,9 @@ const Header = () =>{
                             <Nav.Link><NavLink to="/" className = "linkColor">Главная</NavLink></Nav.Link>
                             <Nav.Link><NavLink to="/services" className = "linkColor">Услуги</NavLink></Nav.Link>
                             <Nav.Link><NavLink to="/aboutUs" className = "linkColor">О нас</NavLink></Nav.Link>
-                            <Nav.Link><NavLink to="/contacts" className = "linkColor">Сонтакты</NavLink></Nav.Link>
+                            <Nav.Link><NavLink to="/contacts" className = "linkColor">Контакты</NavLink></Nav.Link>
                         </Nav>
-                        <Button variant="outline-dark" className = "mr-2 Get-con">Заказать звонок</Button>
+                        <Button variant="outline-dark" className = "mr-2 Get-con" href="https://dikidi.net/#widget=70567">Онлайн запись</Button>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>

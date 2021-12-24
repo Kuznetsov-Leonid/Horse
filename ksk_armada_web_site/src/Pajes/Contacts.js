@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import ContBuild from '../Components/Contacts/ContactsBuild';
 
 export default class Contacts extends Component{
     render(){
         return(
             <>
-                <div>
-                    <h1>Contacts</h1>
+                <div className='main'>
+                    <ContBuild/>
                 </div>
             </>
         )

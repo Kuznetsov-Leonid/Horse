@@ -5,6 +5,10 @@
 import React, { useState } from 'react';
 import { Button, Container, Nav, Navbar, Form, NavDropdown, Modal, CardGroup, Card, Carousel } from 'react-bootstrap';
 import Logo from './logogtype.jpg';
+import h1 from './h1.jpg';
+import h2 from './h2.jpg';
+import h3 from './h3.jpg';
+
 
 
 const HomeBuild = () =>{
@@ -14,7 +18,7 @@ const HomeBuild = () =>{
             <div className='home-bg'>
                 <Container>
                     <CardGroup>
-                        <Card style = {{'background': 'transparent', 'border': 'none'}}>
+                        <Card style = {{'background': 'transparent', 'border': 'none', 'margin':'20px'}}>
                             <img className='imgLogo' src={Logo} alt="." />
                             <div className='btn-pj'>
                                 <Button variant="outline-dark" 
@@ -22,19 +26,17 @@ const HomeBuild = () =>{
                                     'border':'solid #F75E05 1px',
                                     'color':'#F75E05',
                                     'width': '124px'
-                                }}>
-                                    О нас</Button>
+                                }} href='/aboutUs'>О нас</Button>
                                 <Button variant="outline-dark" className='Services'
-                                style = {{'width': '124px'}}
-                                >Услуги</Button>
+                                style = {{'width': '124px'}} href='/services'>Услуги</Button>
                             </div>
                         </Card>
-                        <Card style = {{'background': 'transparent', 'border': 'none'}}>
+                        <Card style = {{'background': 'transparent', 'border': 'none', 'margin':'20px'}}>
                         <Carousel variant="dark">
                             <Carousel.Item>
                                 <img
-                                className="d-block w-100"
-                                src="holder.js/800x400?text=First slide&bg=f5f5f5"
+                                className="d-block"
+                                src={h1}
                                 alt="First slide"
                                 />
                                 <Carousel.Caption>
@@ -44,8 +46,8 @@ const HomeBuild = () =>{
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img
-                                className="d-block w-100"
-                                src="holder.js/800x400?text=Second slide&bg=eee"
+                                className="d-block"
+                                src={h2}
                                 alt="Second slide"
                                 />
                                 <Carousel.Caption>
@@ -55,8 +57,8 @@ const HomeBuild = () =>{
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img
-                                className="d-block w-100"
-                                src="holder.js/800x400?text=Third slide&bg=e5e5e5"
+                                className="d-block"
+                                src={h3}
                                 alt="Third slide"
                                 />
                                 <Carousel.Caption>

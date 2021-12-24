@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import NotFound from '../Components/NotFound404/notFoundBuild';
 
-export default class NotFound extends Component{
+export default class NotFound404 extends Component{
     render(){
         return(
             <>
-                <div>
-                    <h1>NotFound 404</h1>
+                <div className='main'>
+                    <NotFound/>
                 </div>
             </>
         )
