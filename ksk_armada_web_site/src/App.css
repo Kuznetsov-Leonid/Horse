@@ -54,7 +54,7 @@
   border: none;
 }
 
-/*Header*/
+/*-----------------------------------------Header---------------------------------------------*/
 .me-auto{
   text-align: center;
   margin-left: auto;
@@ -78,32 +78,18 @@
   background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
 }
 
-/*Fouter*/
-.Background-color-fouter{
+/*---------------------------Fouter--------------------------------*/
+
+.container_foouter{
   background-color: #1E212C;
+  width: 100%;
+  height: auto;
 }
-.Title-card{
-  /* h6 */
-  padding-left: 14px;
+.component_title{
+  color: white;
   line-height: 150%;
-  /* identical to box height, or 24px */
-  display: flex;
-  align-items: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  /* white */
-  color: #FFFFFF;
-}
-.Title-card-2{
-    /* h6 */
-    line-height: 150%;
-    /* identical to box height, or 24px */
-    display: flex;
-    align-items: center;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    /* white */
-    color: #FFFFFF;
 }
 /*------Button link style------*/
 
@@ -120,6 +106,20 @@
 .img-button-link:hover{opacity: 1;}
 
 /*---------------------------*/
+
+.map-link{
+  text-decoration: none;
+  color: white;
+  opacity: 70%;
+  line-height: 3;
+  letter-spacing: 1px;
+  width: auto;
+  transform: 1c;
+}
+.map-link:hover{
+  opacity: 100%;
+  color: white;
+}
 .Card-three-txt{
   opacity: 0.6;
   display: inline;
@@ -186,7 +186,9 @@
 }
 .Background-color-sub-fouter{
   background-color: #656872;
-  height: 30px;
+  height: 30px; 
+  bottom: 0;
+  width: 100%;
 }
 #Equestrian{
   height: 30px;

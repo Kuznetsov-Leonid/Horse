@@ -13,11 +13,10 @@ code {
     monospace;
 }
 .wrapper{
-  min-height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
-
 .main{
   padding: auto;
   flex: 1 1 auto;

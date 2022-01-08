@@ -17,20 +17,25 @@ const aboutUsBuild = () =>{
                         <Card style={{'border':'none'}}>
                             <Card.Img variant="top"  
                                     style={{
-                                        'width': '20.0rem',
+                                        'width':'auto',
+                                        'height':'auto',
                                         'display': 'block',
                                         'margin-left': 'auto',
                                         'margin-right': 'auto'
                                         }} 
                                     src={Horse} />
                             <Card.Body>
-                                <Card.Text style={{'text-align':'center'}}>
+                                <Card.Text style={{
+                                    'text-align':'center',
+                                    'width':'auto',
+                                    'height':'auto'
+                                    }}>
                                     <h5>Конно-спортивный клуб &laquo;Армада&raquo; приглашает на&nbsp;постой лошадей любого пола и&nbsp;возраста!</h5>
                                     Работаем с&nbsp;9:00 до&nbsp;21:00
                                 </Card.Text>
                             </Card.Body>
                         </Card>
-                        <Card style={{'border':'none'}}>
+                        <Card style={{'border':'none', 'height':'auto'}}>
                         <Card.Body>
                             <Card.Title style={{'text-align':'center'}}><h2>О&nbsp;нас</h2></Card.Title>
                             <ListGroup>
