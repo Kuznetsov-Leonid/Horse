@@ -33,14 +33,14 @@ const cerviceBuild = () =>{
                 <Container>
                     <Card className='nav-content-2' style={{'background-color': '#FBC9C9'}}>
                         <div className='content-display'>
-                            <h1>Обучение верховой езды</h1>
+                            <h1>Обучение верховой езде</h1>
                             <p>
                                 Обучаем с основ до профессионального уровня, даже если 
                                 Вы до этого никогда не были в седле. 
                                 Уроки проходят в группах или индивидуально, а лошадки подбираются в соответствии с возрастом, 
                                 весом и навыками всадника.
                             </p>
-                            <Button className='btn-online-signUp' href="https://dikidi.net/#widget=70567" variant="outline-dark">Онлайн записьь</Button>
+                            <Button className='btn-online-signUp' href="https://dikidi.net/#widget=70567" variant="outline-dark">Онлайн запись</Button>
                         </div>
                     </Card>
                 </Container>
