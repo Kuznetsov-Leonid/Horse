@@ -32,8 +32,12 @@ const Header = () =>{
                             <Nav.Link><NavLink to="/aboutUs" className = "linkColor">О нас</NavLink></Nav.Link>
                             <Nav.Link><NavLink to="/contacts" className = "linkColor">Контакты</NavLink></Nav.Link>
                         </Nav>
-                        <Button variant="outline-dark" className = "mr-2 Get-con" href="https://dikidi.net/#widget=70567">Онлайн запись</Button>
+                        <Nav>
+                            <Button variant="outline-dark" className = "mr-2 Get-con" href="https://dikidi.net/#widget=70567">Онлайн запись</Button>
+                        </Nav>
+                            
                         </Navbar.Collapse>
+                        
                     </Container>
                 </Navbar>
                 <Routes>

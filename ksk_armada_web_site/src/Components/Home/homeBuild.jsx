@@ -16,7 +16,7 @@ const HomeBuild = () =>{
     return (
         <>
             <div className='home-bg'>
-                <Container>
+                <Container style={{'padding-top': '1px', 'padding-bottom': '1px'}}>
                     <CardGroup>
                         <Card style = {{'background': 'transparent', 'border': 'none', 'margin':'20px'}}>
                             <img className='imgLogo' src={Logo} alt="." />
@@ -33,34 +33,19 @@ const HomeBuild = () =>{
                         </Card>
                         <Card style = {{'background': 'transparent', 'border': 'none', 'margin':'20px'}}>
                         <Carousel variant="dark">
-                            <Carousel.Item>
-                                <img
-                                className="d-block"
-                                src={h1}
-                                alt="First slide"
-                                />
+                            <Carousel.Item style={{'backgroundColor':'gray', 'height':'650px'}}>
                                 <Carousel.Caption>
                                 <h5>First slide label</h5>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                className="d-block"
-                                src={h2}
-                                alt="Second slide"
-                                />
+                            <Carousel.Item style={{'backgroundColor':'blue', 'height':'650px'}}>
                                 <Carousel.Caption>
                                 <h5>Second slide label</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                className="d-block"
-                                src={h3}
-                                alt="Third slide"
-                                />
+                            <Carousel.Item style={{'backgroundColor':'white', 'height':'650px'}}>
                                 <Carousel.Caption>
                                 <h5>Third slide label</h5>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

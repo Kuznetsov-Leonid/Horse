@@ -11,13 +11,13 @@ const aboutUsBuild = () =>{
 
     return (
         <>
-            <div style={{margin:'15px 0px 15px 0px'}}>
+            <div style={{margin:'60px 0px 60px 0px'}}>
             <Container>
                     <CardGroup>
                         <Card style={{'border':'none'}}>
                             <Card.Img variant="top"  
                                     style={{
-                                        'width':'auto',
+                                        'width':'20rem',
                                         'height':'auto',
                                         'display': 'block',
                                         'margin-left': 'auto',

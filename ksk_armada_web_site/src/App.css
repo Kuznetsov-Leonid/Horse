@@ -76,6 +76,7 @@
 }
 .Get-con{
   background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  text-align: center;
 }
 
 /*---------------------------Fouter--------------------------------*/
@@ -100,7 +101,7 @@
 .You{width: 24px; height: 16,8px;}
 .Tel{width: 22px; height: 20px;}
 .Inst{width: 20px; height: 20px;}
-.In{width: 20px; height: 20px;}
+.Vk-fut{width: 27px; height: 27px;}
 
 .img-button-link{opacity: 0.6;}
 .img-button-link:hover{opacity: 1;}

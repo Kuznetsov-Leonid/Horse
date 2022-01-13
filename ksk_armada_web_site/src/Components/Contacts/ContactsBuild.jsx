@@ -3,9 +3,9 @@
  * 04.01.2022
  */
 import { useForm } from 'react-hook-form';
-import React, { useRef, useState, useEffect } from 'react';
-import emailjs from 'emailjs-com';
-import { Button, Container, Form, CardGroup, Card } from 'react-bootstrap';
+import emailjs, { send, sendForm } from 'emailjs-com';
+import React, { useRef, useState } from 'react';
+import { Button, Container, Form, CardGroup, Card, Spinner } from 'react-bootstrap';
 import Iframe from './iframe';
 import Massege from './massege.png';
 import Phone from './phone.png';
@@ -19,7 +19,7 @@ import Chess from './chess.png';
 
 
 const ContactsBuild = () =>{
-
+    const form = useRef();
     const {
         register,
         formState: {
@@ -31,28 +31,52 @@ const ContactsBuild = () =>{
     } = useForm({
         mode: "onTouched"
     }); 
-
-    const onSubmit = (data) => {
-        console.log(JSON.stringify(data)); 
-        sendEmail();
-        reset();
-    }
     
-    //Отправка формы на почту https://dashboard.emailjs.com => orlan1211@yahoo.com
-    const form = useRef();
     const sendEmail = (e) => {
             emailjs.sendForm('service_td3yqi6', 'template_g27ul53', form.current, 'user_RBIjAEvAriwtz46L0hxec')
             .then((result) => {
-            console.log(result.text);
-                alert("Спасибо, мы скоро с Вами свяжемся!");
-            }, (error) => {
-                console.log(error.text);
-                alert("Что-то пошло не так, ошибка отправки.");
-            });
-            e.preventDefault();
-        };
+                console.log(result.text);
+                    function success() {
+                        alert("Спасибо, мы скоро с Вами свяжемся!");
+                        console.log("Успешное отправление формы.");
+                        reset();
+                    }
+                        success();
+                }, (error) => {
+                    console.log(error.text);
+                    function notSuccess() {
+                        alert("Что-то пошло не так, ошибка отправки.");
+                        console.log("Ошибка отправки формы.");
+                        reset();
+                    } 
+                        notSuccess();
+                });
+            return (e.preventDefault())
+        }   
     
-    
+    const onSubmit = (data) => {
+        //alert(JSON.stringify(data));
+        sendEmail();
+        //reset()
+    }
+
+    function load() {
+        while (isValid) {
+            return (
+                <Button variant="primary" disabled>
+                    <Spinner
+                    as="span"
+                    animation="grow"
+                    size="sm"
+                    role="status"
+                    aria-hidden="true"
+                    />
+                    Обработка формы...
+                </Button>
+            );
+        }
+    };
+
     return (
         <>
             <Container>
@@ -84,8 +108,6 @@ const ContactsBuild = () =>{
                     <Card style = {{'background': 'transparent', 'border': 'none'}}>
                         <h6>Остались вопросы?</h6>
                         <h1>Напишите нам</h1>       
-                        
-                        
                         <Form ref={form} onSubmit={handleSubmit(onSubmit)}> 
                             <CardGroup>
                                 <Card style = {{'background': 'transparent', 'border': 'none', 'marginRight':'5px'}}>
@@ -137,17 +159,16 @@ const ContactsBuild = () =>{
                             <div style={{color:'red'}}>{errors?.tel && <p>{errors?.tel?.message || "Error!"}</p>}</div>
                             <div style={{color:'red'}}>{errors?.name && <p>{errors?.name?.message || "Error!"}</p>}</div>
                             <div style={{color:'red'}}>{errors?.email && <p>{errors?.email?.message || "Error!"}</p>}</div>
-                            <br />
+                            <div>{load()}</div>
+                            <br/>
                             <Button disabled={!isValid} variant="outline-dark" type="submit" value="Send" className = "mr-2 Get-con" id="send">Отправить</Button>
-                        </Form>
-
-
-                    </Card>
+                    </Form>
+                </Card>
                 </CardGroup>
             </Container>
         </>
     )
-}
+};
 
 export default ContactsBuild
 
