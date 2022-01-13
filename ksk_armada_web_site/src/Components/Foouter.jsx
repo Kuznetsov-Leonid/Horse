@@ -96,8 +96,8 @@ const Fouter = () =>{
                             className='component_fouter'>
                             <h6 className='component_title'>МЫ В СОЦСЕТЯХ</h6>
                             <span>
-                                <Button className = "pg-0" variant="link" href="#"><img className = "img-button-link You" src={Youtube} alt="." /></Button>
-                                <Button className = "pg-0" variant="link" href="#"><img className = "img-button-link Tel" src={Telegram} alt="." /></Button>
+                                <Button disabled className = "pg-0" variant="link" href="#"><img className = "img-button-link You" src={Youtube} alt="." /></Button>
+                                <Button disabled className = "pg-0" variant="link" href="#"><img className = "img-button-link Tel" src={Telegram} alt="." /></Button>
                                 <Button className = "pg-0" variant="link" href="https://www.instagram.com/ksk_armada/" target='_blank'><img className = "img-button-link Inst" src={Instagram} alt="." /></Button>
                                 <Button className = "pg-0" variant="link" href="https://vk.com/ksk_armada" target='_blank'><img className = "img-button-link Vk-fut" src={Vk} alt="." /></Button>       
                             </span>
@@ -111,7 +111,7 @@ const Fouter = () =>{
                             className='component_fouter'>
                                 <h6 className='component_title'>НАШИ КОНТАКТЫ</h6>
                                 <p className = "Card-three-txt"><img className = "Ph-1" src={Phone} alt="." />+7 (967) 017-9963</p>
-                                <p className = "Card-three-txt"><img className = "Ma-1" src={Mail} alt="." />hello@createx.com</p>
+                                <p className = "Card-three-txt"><img className = "Ma-1" src={Mail} alt="." />ksk_armada@Yahoo.com</p>
                         </Card>
                         <Card   
                             style = {{

@@ -77,20 +77,23 @@ const ContactsBuild = () =>{
         }
     };
 
+    
+
+
     return (
         <>
             <Container>
                 <CardGroup style={{'marginTop':'50px'}}>
                     <Card style = {{'background': 'transparent', 'border': 'none'}}>
                         <h1>Наши контакты</h1>
-                        <p><img className='mes' src={Massege} alt="." />&nbsp;hello@createx.com</p>
+                        <p><img className='mes' src={Massege} alt="." />&nbsp;ksk_armada@Yahoo.com</p>
                         <p><img className='ph' src={Phone} alt="." />&nbsp;+7 (967) 017-9963</p>
                         <p><img className='poi' src={Point} alt="." />&nbsp;Новорязанское шоссе, дер. Дурниха Раменского района владение 79, 25&nbsp;км от&nbsp;МКАД.</p>
                         <br/>
                         <h3>Мы в соцсетях</h3>
                         <div>
-                            <Button className = "pg-0" variant="link" href="#"><img className = "img-button-link You" src={Youtube} alt="." /></Button>
-                            <Button className = "pg-0" variant="link" href="#"><img className = "img-button-link Tel" src={Telegram} alt="." /></Button>
+                            <Button disabled className = "pg-0" variant="link" href="#"><img className = "img-button-link You" src={Youtube} alt="." /></Button>
+                            <Button disabled className = "pg-0" variant="link" href="#"><img className = "img-button-link Tel" src={Telegram} alt="." /></Button>
                             <Button className = "pg-0" variant="link" href="https://www.instagram.com/ksk_armada/" target='_blank'><img className = "img-button-link Inst" src={Instagram} alt="." /></Button>
                             <Button className = "pg-0" variant="link" href="https://vk.com/ksk_armada" target='_blank'><img className = "img-button-link Vk" src={Vk} alt="." /></Button>
                         </div>
