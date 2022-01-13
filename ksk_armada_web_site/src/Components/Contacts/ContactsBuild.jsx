@@ -33,7 +33,7 @@ const ContactsBuild = () =>{
     }); 
     
     const sendEmail = (e) => {
-            emailjs.sendForm('service_td3yqi6', 'template_g27ul53', form.current, 'user_RBIjAEvAriwtz46L0hxec')
+            emailjs.sendForm('service_rla1tl2', 'template_04b0tu1', form.current, 'user_W6DyZvFT710FcvSPQiVd2')
             .then((result) => {
                 console.log(result.text);
                     function success() {
@@ -153,7 +153,7 @@ const ContactsBuild = () =>{
                                 <Form.Label>Сообщение</Form.Label>
                                 <Form.Control {...register("message")} type="messege" placeholder="Ваше сообщение" as="textarea" name="message"  rows={3} />
                             </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                            <Form.Group className="mb-3" controlId="formBasicCheckbox" name="checkbox">
                                 <Form.Check {...register("checkbox",{
                                     required: true
                                 }

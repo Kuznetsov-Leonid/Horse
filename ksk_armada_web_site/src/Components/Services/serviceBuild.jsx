@@ -24,7 +24,11 @@ const cerviceBuild = () =>{
                                 тёплый туалет,стиральная машина для вальтрапов, бинтов, легких попон.
                                 Создавать комфортные условия для жизни лошадей - наша работа!
                             </p>
-                            <Button className='btn-online-signUp' variant="outline-dark" href="https://dikidi.net/#widget=70567">Онлайн запись</Button>
+                            <p> 
+                                Для получении информации о наличии свободных мест для постоя, 
+                                вы можете оставить свой вопрос на странице <a href='/contacts'>контакты</a> <br />
+                                или позвонить по номеру: <h3>+7 (967) 017-9963</h3>
+                            </p>
                         </div>
                     </Card>
                 </Container>
@@ -67,7 +71,10 @@ const cerviceBuild = () =>{
                                 Чтoбы вaши впeчaтлeния сoхрaнились нe тoлькo в вaшeй пaмяти,
                                 мы прeдлaгaeм прoфeссиoнaльную фoтoсeссию с лoшaдьми.
                             </p>
-                            <Button className='btn-online-signUp' href="https://dikidi.net/#widget=70567" variant="outline-dark">Онлайн запись</Button>
+                            <p> 
+                                Вы можете оставить заявку на странице <a href='/contacts'>контакты</a> <br />
+                                или позвонить по номеру: <h3>+7 (967) 017-9963</h3>
+                            </p>
                         </div>
                     </Card>
                 </Container>  
@@ -77,3 +84,6 @@ const cerviceBuild = () =>{
 }
 
 export default cerviceBuild
+
+//А для владельцев лошадей полный пансион. На базе клуба работает опытный берейтор и тренеры.
+//Так же на базе конюшни предлагаем услуги перевозки лошадей

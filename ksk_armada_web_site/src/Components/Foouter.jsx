@@ -152,6 +152,12 @@ const Fouter = () =>{
                                     type="email" placeholder="Email address" />
                                     <br />
                                     <div style={{color:'red'}}>{errors?.email && <p>{errors?.email?.message || "Error!"}</p>}</div>
+                                    <Form.Group className="mb-3" controlId="formBasicCheckbox" name="checkbox">
+                                        <Form.Check {...register("checkbox",{
+                                            required: true
+                                        }
+                                        )} style={{'color':'white'}} type="checkbox" label="Я согласен получать сообщения от КСК Армада*" name="checkbox"/>
+                                    </Form.Group>
                                     <div style={{'marginBottom':'10px'}}>{load()}</div>
                                     <Button disabled={!isValid} type="submit">Подписаться</Button>
                                 </Form.Group>
@@ -166,7 +172,7 @@ const Fouter = () =>{
                 <CardGroup style = {{'textAlign':'center'}}>
                     <Card style = {{'background': 'transparent', 'border': 'none', 'height': '15px'}} >
                             <p className = "fouter-copir-txt">
-                                &copy;&ensp; All rights reserved. Made with by Orlan. E.S.C. ARMADA
+                                &copy;&ensp; All rights reserved. Made with by Orlan1211@yahoo.com. E.S.C. ARMADA
                                 <img src={Equestrian} alt="." id = "Equestrian"/>
                             </p>
                     </Card>
