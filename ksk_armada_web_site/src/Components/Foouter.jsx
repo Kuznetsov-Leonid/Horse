@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form';
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { Container, CardGroup, Card, Button, Form, Spinner } from 'react-bootstrap';
+import { BrowserRouter, Route, NavLink, Routes } from 'react-router-dom';
 import Youtube from '../img/Subtract.png';
 //import Facebook from '../img/Vector-0.png';
 //import Twitter from '../img/Vector-1.png';
@@ -15,9 +16,6 @@ import Vk from '../img/Vector-5.png';
 import Mail from '../img/Mail.png';
 import Phone from '../img/Phone.png';
 import Equestrian from '../img/equestrian.png';
-
-
-
 
 
 const Fouter = () =>{
@@ -83,7 +81,6 @@ const Fouter = () =>{
     
     return (
         <>  
-        
             <div className='container_foouter'>
                 <Container>
                     <CardGroup>
@@ -121,10 +118,10 @@ const Fouter = () =>{
                                     'marginTop': '15px'}}
                             className='component_fouter'>
                                 <h6 className='component_title'>КАРТА САЙТА</h6>
-                                    <a className='map-link' href="/contacts">Контакты</a>
-                                    <a className='map-link' href='/'>Главная</a>
-                                    <a className='map-link' href="/services">Услуги</a>
-                                    <a className='map-link' href="/aboutUs">О нас</a>
+                                    <NavLink to="/contacts" className='map-link'><a>Контакты</a></NavLink>
+                                    <NavLink to="/" className='map-link'><a>Главная</a></NavLink>
+                                    <NavLink to="/services" className='map-link'><a>Услуги</a></NavLink>
+                                    <NavLink to="/aboutUs" className='map-link'><a >О нас</a></NavLink>
                         </Card>
                         <Card
                             style = {{
@@ -177,7 +174,7 @@ const Fouter = () =>{
                             </p>
                     </Card>
                 </CardGroup>
-            </div>   
+            </div> 
         </> 
     )
 }

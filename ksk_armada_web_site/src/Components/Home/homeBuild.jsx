@@ -4,6 +4,7 @@
  */
 import React, { useState } from 'react';
 import { Button, Container, Modal, CardGroup, Card, Carousel } from 'react-bootstrap';
+import { BrowserRouter, Route, NavLink, Routes } from 'react-router-dom';
 import Logo from './logogtype.jpg';
 import preview1 from './imgKonkur1.jpg';
 import konkur from './imgKonkur2.jpg';
@@ -38,14 +39,14 @@ const HomeBuild = () =>{
                         <Card style = {{'background': 'transparent', 'border': 'none', 'margin':'20px'}}>
                             <img className='imgLogo' src={Logo} alt="." />
                             <div className='btn-pj'>
-                                <Button variant="outline-dark" 
+                                <NavLink to="/aboutUs" className = "linkColor"><Button variant="outline-dark" 
                                 style = {{
                                     'border':'solid #F75E05 1px',
                                     'color':'#F75E05',
                                     'width': '124px'
-                                }} href='/aboutUs'>О нас</Button>
-                                <Button variant="outline-dark" className='Services'
-                                style = {{'width': '124px'}} href='/services'>Услуги</Button>
+                                }} to="/aboutUs">О нас</Button></NavLink>
+                                <NavLink to="/services" className = "linkColor"><Button variant="outline-dark" className='Services'
+                                style = {{'width': '124px'}}>Услуги</Button></NavLink>
                             </div>
                         </Card>
                         <Card style = {{'background': 'transparent', 'border': 'none', 'margin':'20px'}}>

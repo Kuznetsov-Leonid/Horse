@@ -4,8 +4,9 @@
  */
 import React from 'react';
 
-import { Button, Container, Nav, Navbar, Form, NavDropdown, Modal } from 'react-bootstrap';
-import { BrowserRouter as Router, Route, NavLink, Routes } from 'react-router-dom';
+import { Button, Container, Nav, Navbar} from 'react-bootstrap';
+import { BrowserRouter, Route, NavLink, Routes } from 'react-router-dom';
+import Foouter from './Foouter';
 
 //Routing
 import Home from "../Pajes/Home";
@@ -20,7 +21,7 @@ const Header = () =>{
 
     return (
         <>
-            <Router>
+            <BrowserRouter>
                 <Navbar sticky = "top" collapseOnSelect className='headerBG' expand="lg">
                     <Container>
                         <Navbar.Brand style = {{'color':'white'}} href="/">КСК АРМАДА</Navbar.Brand>
@@ -47,7 +48,8 @@ const Header = () =>{
                     <Route exact path ="/contacts" element={<Contacts/>} />
                     <Route exact path="*" element={<NotFound/>} />
                 </Routes>
-            </Router>
+                <Foouter/>
+            </BrowserRouter>
         </>
     )
 }
