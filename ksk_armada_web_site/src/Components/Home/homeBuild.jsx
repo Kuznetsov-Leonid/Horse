@@ -5,7 +5,7 @@
 import React, { useState } from 'react';
 import { Button, Container, Modal, CardGroup, Card, Carousel } from 'react-bootstrap';
 import { BrowserRouter, Route, NavLink, Routes } from 'react-router-dom';
-import Logo from './logogtype.jpg';
+import Logo from './logogtype.png';
 import preview1 from './imgKonkur1.jpg';
 import konkur from './imgKonkur2.jpg';
 import preview2 from './childShowTitle.jpg';
@@ -34,7 +34,7 @@ const HomeBuild = () =>{
     return (
         <>
             <div className='home-bg'>
-                <Container style={{'padding-top': '1px', 'padding-bottom': '1px'}}>
+                <Container style={{'padding-top': '1px', 'padding-bottom': '1px', 'width':'auto', 'height':'auto'}}>
                     <CardGroup>
                         <Card style = {{'background': 'transparent', 'border': 'none', 'margin':'20px'}}>
                             <img className='imgLogo' src={Logo} alt="." />

@@ -3,10 +3,11 @@
     width: 100%;
 }
 .imgLogo{
-    width: auto;
+    width: 100%;
     height: auto;
     border-radius: 20px;
     margin-top: 70px;
+    object-fit: contain;
 }
 .Services{
     background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
