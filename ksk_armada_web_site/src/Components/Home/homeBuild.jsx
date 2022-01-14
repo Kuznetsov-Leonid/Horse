@@ -39,13 +39,13 @@ const HomeBuild = () =>{
                         <Card style = {{'background': 'transparent', 'border': 'none', 'margin':'20px'}}>
                             <img className='imgLogo' src={Logo} alt="." />
                             <div className='btn-pj'>
-                                <NavLink to="/aboutUs" className = "linkColor"><Button variant="outline-dark" 
+                                <NavLink to="/aboutUs"><Button variant="outline-dark" 
                                 style = {{
                                     'border':'solid #F75E05 1px',
                                     'color':'#F75E05',
                                     'width': '124px'
-                                }} to="/aboutUs">О нас</Button></NavLink>
-                                <NavLink to="/services" className = "linkColor"><Button variant="outline-dark" className='Services'
+                                }}>О нас</Button></NavLink>
+                                <NavLink to="/services" ><Button variant="outline-dark" className='Services'
                                 style = {{'width': '124px'}}>Услуги</Button></NavLink>
                             </div>
                         </Card>

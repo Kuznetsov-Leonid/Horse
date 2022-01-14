@@ -21,7 +21,7 @@ const Header = () =>{
 
     return (
         <>
-            <BrowserRouter>
+            <BrowserRouter forceRefresh={true} basename="/">
                 <Navbar sticky = "top" collapseOnSelect className='headerBG' expand="lg">
                     <Container>
                         <Navbar.Brand style = {{'color':'white'}} href="/">КСК АРМАДА</Navbar.Brand>
