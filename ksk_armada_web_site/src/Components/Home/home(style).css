@@ -1,0 +1,29 @@
+.home-bg{
+    background-color: rgba(236, 128, 128, 0.5);
+    width: 100%;
+}
+.imgLogo{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 70px;
+    object-fit: contain;
+}
+.Services{
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    margin-left: 35px;
+}
+.btn-pj {
+    float: left;
+    margin: 0 auto; 
+    padding-top: 30px; 
+    padding-bottom: 70px;
+}
+.d-block{
+    max-width: 890px;
+    max-height: 650px;
+}
+.snowChildShowPhoto{
+    width: 100%;
+    margin-bottom: 10px;
+}
