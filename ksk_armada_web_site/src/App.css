@@ -79,6 +79,7 @@
   text-align: center;
 }
 
+
 /*---------------------------Fouter--------------------------------*/
 
 .container_foouter{
@@ -178,22 +179,21 @@
 }
 .fouter-copir-txt{
   /* extrasmall/regular */
+  color: #000;
   font-family: Lato;
-  font-size: 12px;
+  font-size: 0.5em; 
   line-height: 150%;
-  /* identical to box height, or 18px */
-  /* white */
-  color: black;
 }
 .Background-color-sub-fouter{
   background-color: #656872;
-  height: 30px; 
+  height: 35px; 
   bottom: 0;
   width: 100%;
 }
 #Equestrian{
   height: 30px;
-  width: 33px;
-  position: relative;
   left: 7px;
+  position: relative;
+  width: 33px;
+  margin-bottom: 5px; 
 }

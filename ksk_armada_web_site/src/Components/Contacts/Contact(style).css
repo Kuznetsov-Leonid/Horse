@@ -24,3 +24,8 @@
 .Vk{
     width: 30px;
 }
+#personInfo{
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
