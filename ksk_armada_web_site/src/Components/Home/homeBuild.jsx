@@ -4,7 +4,8 @@
  */
 import React, { useState } from 'react';
 import { Button, Container, Modal, CardGroup, Card, Carousel } from 'react-bootstrap';
-import Logo from './logogtype.jpg';
+import { BrowserRouter, Route, NavLink, Routes } from 'react-router-dom';
+import Logo from './logogtype.png';
 import preview1 from './imgKonkur1.jpg';
 import konkur from './imgKonkur2.jpg';
 import preview2 from './childShowTitle.jpg';
@@ -33,19 +34,19 @@ const HomeBuild = () =>{
     return (
         <>
             <div className='home-bg'>
-                <Container style={{'padding-top': '1px', 'padding-bottom': '1px'}}>
+                <Container style={{'padding-top': '1px', 'padding-bottom': '1px', 'width':'auto', 'height':'auto'}}>
                     <CardGroup>
                         <Card style = {{'background': 'transparent', 'border': 'none', 'margin':'20px'}}>
                             <img className='imgLogo' src={Logo} alt="." />
                             <div className='btn-pj'>
-                                <Button variant="outline-dark" 
+                                <NavLink to="/aboutUs"><Button variant="outline-dark" 
                                 style = {{
                                     'border':'solid #F75E05 1px',
                                     'color':'#F75E05',
                                     'width': '124px'
-                                }} href='/aboutUs'>О нас</Button>
-                                <Button variant="outline-dark" className='Services'
-                                style = {{'width': '124px'}} href='/services'>Услуги</Button>
+                                }}>О нас</Button></NavLink>
+                                <NavLink to="/services" ><Button variant="outline-dark" className='Services'
+                                style = {{'width': '124px'}}>Услуги</Button></NavLink>
                             </div>
                         </Card>
                         <Card style = {{'background': 'transparent', 'border': 'none', 'margin':'20px'}}>
@@ -91,35 +92,35 @@ const HomeBuild = () =>{
             >
                 <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter">
-                        Старты! Внутриклубные соревнования по конкуру
+                        Старты! Внутриклубные соревнования по&nbsp;конкуру
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                 <h4>пройдут 23.01.2022г.</h4>
                 <img style={{'width':'100%'}} src={konkur} alt="." />
                 <p>
-                    Приглашаем спортсменов - любителей принять участие в 
-                    соревнования по конкуру, которые пройдут у нас в клубе
-                    23 января 2022 года. 
+                    Приглашаем спортсменов&nbsp;&mdash; любителей принять участие в 
+                    соревнования по&nbsp;конкуру, которые пройдут у&nbsp;нас в&nbsp;клубе
+                    23&nbsp;января 2022&nbsp;года.
                 </p>
                 <p>
                     Маршруты:
                 </p>
                 <ul>
-                    <li>Кавалетти (зачёт дети ,любители , дети с хендлером)</li>
+                    <li>Кавалетти (зачёт дети ,любители , дети с&nbsp;хендлером)</li>
                     <li>кавалетти + (Зачёт дети, любители) </li>
-                    <li>маршрут 40см с приближением к норме времени </li>
+                    <li>маршрут 40см с&nbsp;приближением к&nbsp;норме времени </li>
                     <li>Зачёт (дети, любители)</li>
-                    <li>маршрут до 60 см (Зачёт дети, любители)</li>
-                    <li>маршрут 70 см ( зачёт дети, любители)</li>
-                    <li>маршрут 90 (общий)</li>
+                    <li>маршрут до&nbsp;60&nbsp;см (Зачёт дети, любители)</li>
+                    <li>маршрут 70&nbsp;см ( зачёт дети, любители)</li>
+                    <li>маршрут&nbsp;90 (общий)</li>
                 </ul>
                 <p>Стартовые взносы:</p>
                 <ul>
-                    <li>1000 руб - кавалетти для детей</li>
-                    <li>Остальные - 1500 руб</li>
+                    <li>1000 руб&nbsp;&mdash; кавалетти для детей</li>
+                    <li>Остальные&nbsp;&mdash; 1500 руб</li>
                 </ul>
-                <h5>Заявки принимаются строго до 21.01.2022 до 16:00 по телефону +79652408628 (Алина Владимировна)</h5>
+                <h5>Заявки принимаются строго до&nbsp;21.01.2022 до&nbsp;16:00 по&nbsp;телефону +79652408628 (Алина Владимировна)</h5>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={props.onHide}>Закрыть</Button>
@@ -173,16 +174,16 @@ const HomeBuild = () =>{
             >
                 <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter">
-                        Ёлка в честь нового года.
+                        Ёлка в&nbsp;честь нового года.
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                 <h4>18.12.2021г.</h4>
                 <p>
-                    18 декабря 2021 года у нас в КСК Армада состоялся новогодний праздник.
+                    18&nbsp;декабря 2021 года у&nbsp;нас в&nbsp;КСК Армада состоялся новогодний праздник.
                     Спортсмены нашего клуба подготовили новогоднее представление, 
-                    в программе которго были костюмированные выступления, конкурсы, эстафеты,
-                    живая музыка и конечно же Дед Мороз и подарки!
+                    в&nbsp;программе которго были костюмированные выступления, конкурсы, эстафеты,
+                    живая музыка и&nbsp;конечно&nbsp;же Дед Мороз и&nbsp;подарки!
                 </p>
                 <img className='snowChildShowPhoto' src={img1} alt="." />
                 <img className='snowChildShowPhoto' src={img2} alt="." />

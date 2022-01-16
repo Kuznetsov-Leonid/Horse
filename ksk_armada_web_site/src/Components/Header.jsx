@@ -2,10 +2,10 @@
  * Create by Kuznetsov Leonid 
  * 20.12.2021
  */
-import React from 'react';
-
-import { Button, Container, Nav, Navbar, Form, NavDropdown, Modal } from 'react-bootstrap';
-import { BrowserRouter as Router, Route, NavLink, Routes } from 'react-router-dom';
+import React, { useRef, useState } from 'react';
+import {Button, Container, Nav, Navbar} from 'react-bootstrap';
+import { BrowserRouter, Route, NavLink, Routes } from 'react-router-dom';
+import Foouter from './Foouter';
 
 //Routing
 import Home from "../Pajes/Home";
@@ -18,10 +18,11 @@ import NotFound from "../Pajes/NotFound";
 
 const Header = () =>{
 
+
     return (
         <>
-            <Router>
-                <Navbar sticky = "top" collapseOnSelect className='headerBG' expand="lg">
+            <BrowserRouter forceRefresh={true} basename="/">
+                <Navbar sticky = "top" collapseOnSelect className='headerBG' variant="dark" expand="lg">
                     <Container>
                         <Navbar.Brand style = {{'color':'white'}} href="/">КСК АРМАДА</Navbar.Brand>
                         <Navbar.Toggle aria-controls = "responsive-navbar-nav" />
@@ -47,7 +48,9 @@ const Header = () =>{
                     <Route exact path ="/contacts" element={<Contacts/>} />
                     <Route exact path="*" element={<NotFound/>} />
                 </Routes>
-            </Router>
+                <Foouter/>
+            </BrowserRouter>
+            
         </>
     )
 }

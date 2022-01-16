@@ -14,14 +14,11 @@ const notFoundBuild = () =>{
                     <Card style = {{'background': 'transparent', 'border': 'none', 'margin':'20px'}}>
                         <img src={CowBoy} alt="." />
                     </Card>
-                    <Card style = {{'background': 'transparent', 'border': 'none', 'margin':'20px'}}>
-                        <div style={{
-                                        'position': 'relative',
-                                        'top': '160px'
-                            }}>
-                            <h2>404   СТРАНИЦА НЕ НАЙДЕНА</h2>
+                    <Card style = {{'background': 'transparent', 'border': 'none', 'margin':'20px', 'textAlign':'center'}}>
+                        <div>
+                            <h2>404&nbsp;СТРАНИЦА НЕ&nbsp;НАЙДЕНА</h2>
                             <br/>
-                            <h3>Увы... Что-то пошло не так.</h3>
+                            <h3>Увы... Что-то пошло не&nbsp;так.</h3>
                             <br/>
                             <h5>попробуй начать всё сначала</h5>
                             <br/>

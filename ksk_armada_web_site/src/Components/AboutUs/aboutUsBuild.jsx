@@ -43,51 +43,51 @@ const aboutUsBuild = () =>{
                                     <Accordion.Item eventKey="0">
                                     <Accordion.Header>Конюшня</Accordion.Header>
                                     <Accordion.Body>
-                                    Высокие потолки и&nbsp;большие окна. Денники стандартные 3&times;3&nbsp;м., оборудованные автопоилками.
+                                        Высокие потолки и&nbsp;большие окна. Денники стандартные 3&times;3&nbsp;м., оборудованные автопоилками.
                                     </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="1">
                                     <Accordion.Header>Кормление</Accordion.Header>
                                     <Accordion.Body>
-                                    Сено&nbsp;&mdash; от&nbsp;15&nbsp;кг в&nbsp;сутки, раздаётся 4&nbsp;раза в&nbsp;денники и&nbsp;докладывается в&nbsp;левады.
-                                    Концентраты: 3&nbsp;раза в&nbsp;день, овес/каша/овес по&nbsp;вашим нормам. 
-                                    Дача подкормок и&nbsp;ваших дополнительных кормов ( мюсли, жмыхи, жомы и&nbsp;т.&nbsp;д) входит в&nbsp;стоимость постоя!
+                                        Сено&nbsp;&mdash; от&nbsp;15&nbsp;кг в&nbsp;сутки, раздаётся 4&nbsp;раза в&nbsp;денники и&nbsp;докладывается в&nbsp;левады.
+                                        Концентраты: 3&nbsp;раза в&nbsp;день, овес/каша/овес по&nbsp;вашим нормам. 
+                                        Дача подкормок и&nbsp;ваших дополнительных кормов ( мюсли, жмыхи, жомы и&nbsp;т.&nbsp;д) входит в&nbsp;стоимость постоя!
                                     </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="2">
                                     <Accordion.Header>Уборка денников</Accordion.Header>
                                     <Accordion.Body>
-                                    Основная&nbsp;&mdash; утром, далее пробор навоза и&nbsp;мокрых опилок&nbsp;&mdash; в&nbsp;течение дня. 
-                                    Подстилка&nbsp;&mdash; древесная стружка.
+                                        Основная&nbsp;&mdash; утром, далее пробор навоза и&nbsp;мокрых опилок&nbsp;&mdash; в&nbsp;течение дня. 
+                                        Подстилка&nbsp;&mdash; древесная стружка.
                                     </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="3">
                                     <Accordion.Header>Для работы</Accordion.Header>
                                     <Accordion.Body>
-                                    Имеется крытый манеж, выездковый и&nbsp;конкурный плацы, крытая бочка и&nbsp;уличный кодовый круг. 
-                                    Есть выезд в&nbsp;поля.
+                                        Имеется крытый манеж, выездковый и&nbsp;конкурный плацы, крытая бочка и&nbsp;уличный кодовый круг. 
+                                        Есть выезд в&nbsp;поля.
                                     </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="4">
                                     <Accordion.Header>Выгул</Accordion.Header>
                                     <Accordion.Body>
-                                    Выгул от&nbsp;4-х часов в&nbsp;день! 
-                                    Стабуненные лошади гуляют от&nbsp;8&nbsp;часов! 
-                                    В&nbsp;левадах есть сено и&nbsp;организован водопой.
+                                        Выгул от&nbsp;4-х часов в&nbsp;день! 
+                                        Стабуненные лошади гуляют от&nbsp;8&nbsp;часов! 
+                                        В&nbsp;левадах есть сено и&nbsp;организован водопой.
                                     </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="5">
                                     <Accordion.Header>Персонал</Accordion.Header>
                                     <Accordion.Body>
-                                    У&nbsp;нас работают опытные русскоговорящие конюхи!
-                                    Вежливые и&nbsp;ответственные. 
-                                    Подкормки, попоны, пролив/замачивание сена, рептух.
+                                        У&nbsp;нас работают опытные русскоговорящие конюхи!
+                                        Вежливые и&nbsp;ответственные. 
+                                        Подкормки, попоны, пролив/замачивание сена, рептух.
                                     </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="6">
                                     <Accordion.Header>Для владельцев</Accordion.Header>
                                     <Accordion.Body>
-                                    Комната отдыха, индивидуальные шкафчики, амуничники, тёплый туалет.
+                                        Комната отдыха, индивидуальные шкафчики, амуничники, тёплый туалет.
                                     </Accordion.Body>
                                     </Accordion.Item>
                                     </Accordion>
