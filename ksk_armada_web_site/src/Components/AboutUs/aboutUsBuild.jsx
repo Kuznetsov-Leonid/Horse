@@ -2,7 +2,7 @@
  * Create by Kuznetsov Leonid 
  * 24.12.2021
  */
-import React, { useState } from 'react';
+import React from 'react';
 import {Container, Card, CardGroup, ListGroup, Accordion } from 'react-bootstrap';
 import Horse from './horse.png';
 

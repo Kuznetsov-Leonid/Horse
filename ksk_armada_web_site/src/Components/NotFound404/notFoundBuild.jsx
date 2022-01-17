@@ -2,8 +2,8 @@
  * Create by Kuznetsov Leonid 
  * 24.12.2021
  */
-import React, { useState } from 'react';
-import { Button, Container, Nav, Navbar, Form, NavDropdown, Modal, CardGroup, Card } from 'react-bootstrap';
+import React from 'react';
+import { Button, Container, CardGroup, Card } from 'react-bootstrap';
 import CowBoy from './cowboy.png';
 
 const notFoundBuild = () =>{
