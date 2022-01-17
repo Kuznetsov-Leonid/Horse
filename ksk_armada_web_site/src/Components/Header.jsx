@@ -2,7 +2,7 @@
  * Create by Kuznetsov Leonid 
  * 20.12.2021
  */
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import {Button, Container, Nav, Navbar} from 'react-bootstrap';
 import { BrowserRouter, Route, NavLink, Routes } from 'react-router-dom';
 import Foouter from './Foouter';

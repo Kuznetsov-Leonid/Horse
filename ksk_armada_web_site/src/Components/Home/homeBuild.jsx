@@ -4,7 +4,7 @@
  */
 import React, { useState } from 'react';
 import { Button, Container, Modal, CardGroup, Card, Carousel } from 'react-bootstrap';
-import { BrowserRouter, Route, NavLink, Routes } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Logo from './logogtype.png';
 import preview1 from './imgKonkur1.jpg';
 import konkur from './imgKonkur2.jpg';
