@@ -2,7 +2,7 @@
  * Create by Kuznetsov Leonid 
  * 20.12.2021
  */
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import { Button, Container, Modal, CardGroup, Card, Carousel } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import Logo from './logogtype.png';
@@ -34,38 +34,100 @@ const HomeBuild = () =>{
     return (
         <>
             <div className='home-bg'>
-                <Container style={{'padding-top': '1px', 'padding-bottom': '1px', 'width':'auto', 'height':'auto'}}>
+                <Container style={{
+                    'padding-top': '1px',
+                    'padding-bottom': '1px', 
+                    'width':'auto', 
+                    'height':'auto'
+                }}
+                    >
                     <CardGroup>
-                        <Card style = {{'background': 'transparent', 'border': 'none', 'margin':'20px'}}>
-                            <img className='imgLogo' src={Logo} alt="." />
+                        <Card style = {{
+                            'background': 'transparent', 
+                            'border': 'none', 
+                            'margin':'20px'
+                        }}
+                            >
+                                <img className='imgLogo' src={Logo} alt="." />
                             <div className='btn-pj'>
-                                <NavLink to="/aboutUs"><Button variant="outline-dark" 
+                                <NavLink to="/aboutUs">
+                                    <Button 
+                                    variant="outline-dark" 
                                 style = {{
                                     'border':'solid #F75E05 1px',
                                     'color':'#F75E05',
                                     'width': '124px'
-                                }}>О нас</Button></NavLink>
-                                <NavLink to="/services" ><Button variant="outline-dark" className='Services'
-                                style = {{'width': '124px'}}>Услуги</Button></NavLink>
+                                }}>
+                                    О нас
+                                    </Button>
+                                </NavLink>
+                                <NavLink 
+                                to="/services" >
+                                    <Button 
+                                    variant="outline-dark" 
+                                    className='Services'
+                                style = {{
+                                    'width': '124px'
+                                    }}
+                                    >
+                                        Услуги
+                                    </Button>
+                                </NavLink>
                             </div>
                         </Card>
-                        <Card style = {{'background': 'transparent', 'border': 'none', 'margin':'20px'}}>
+                        <Card style = {{
+                            'background': 'transparent', 
+                            'border': 'none', 
+                            'margin':'20px'
+                            }}
+                        >
                         <Carousel variant="dark">
-                            <Carousel.Item style={{'backgroundColor':'gray', 'height':'650px'}}>
-                                <img style={{'width':'100%'}} src={preview1} alt="." />
+                            <Carousel.Item style={{
+                                'backgroundColor':'gray', 
+                                'height':'650px'
+                                }}
+                            >
+                                <img style={{
+                                    'width':'100%'
+                                    }} 
+                                    src={preview1} 
+                                    alt="." 
+                                />
                                 <Carousel.Caption>
-                                <h5 style={{'backgroundColor':'white','opacity':'70%'}}>Внутриклубные соревнования по конкуру 23.01.2022г.</h5>
+                                <h5 style={{
+                                    'backgroundColor':'white',
+                                    'opacity':'70%'
+                                    }}>
+                                        Внутриклубные соревнования по конкуру 23.01.2022г.
+                                </h5>
                                 
-                                <Button variant="primary" onClick={() => setModalShow1(true)}>
+                                <Button variant="primary" 
+                                onClick={() => setModalShow1(true)}
+                                >
                                     Узнать больше.
                                 </Button>
                                 </Carousel.Caption>
                             </Carousel.Item>
-                            <Carousel.Item style={{'backgroundColor':'white', 'height':'650px'}}>
-                                <img style={{'width':'100%'}} src={ preview2} alt="." />
+                            <Carousel.Item style={{
+                                'backgroundColor':'white', 
+                                'height':'650px'
+                                }}
+                            >
+                                <img style={{
+                                    'width':'100%'
+                                    }} 
+                                    src={ preview2} 
+                                    alt="." 
+                                />
                                 <Carousel.Caption>
-                                <h5 style={{'backgroundColor':'white','opacity':'70%'}}>Новый год в КСК Армада.</h5>
-                                <Button variant="primary" onClick={() => setModalShow3(true)}>
+                                <h5 style={{
+                                    'backgroundColor':'white',
+                                    'opacity':'70%'
+                                    }}>
+                                        Новый год в КСК Армада.
+                                </h5>
+                                <Button variant="primary" 
+                                onClick={() => setModalShow3(true)}>
                                     Узнать больше.
                                 </Button>
                                 </Carousel.Caption>
