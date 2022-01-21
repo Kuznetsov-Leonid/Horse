@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-# Horse 
-=======
 # Horse
 ### KSK Armada 
 Website project for KSK Armada (equestrian club). The main task of the site is to post information content about the services provided, news, record and order services, receive feedback and subscribe to newsletters. The goal of the project is to equip the business with a cheap and practical additional tool to attract customers. The site contains content in Russian.
