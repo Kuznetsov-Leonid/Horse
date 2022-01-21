@@ -1,0 +1,35 @@
+.mes{
+    position: relative;
+    width: 21.65px;
+    height: 19.24px;
+    bottom: 4px;
+}
+.ph{
+    position: relative;
+    width: 14px;
+    height: 22px;
+    bottom: 4px;
+    left: 2px;
+}
+.poi{
+    position: relative;
+    width: 17px;
+    height: 21px;
+    bottom: 5px;
+}
+.mapContact{
+    width: 100%;
+    height: 412px;
+}
+.Vk{
+    width: 30px;
+}
+#personInfo{
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.noneShowLoad{
+    display: none;
+}
