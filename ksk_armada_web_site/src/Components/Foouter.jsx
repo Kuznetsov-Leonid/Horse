@@ -47,6 +47,7 @@ const Fouter = () =>{
         return (e.preventDefault())
     }   
 
+        //Валидация формы через react-hook-form
         const {
             register,
             formState: {
@@ -59,6 +60,7 @@ const Fouter = () =>{
             mode: "onTouched"
         }); 
         
+        //Анимация загрузки
         function load() {
             while (isValid) {
                 return (
@@ -107,7 +109,7 @@ const Fouter = () =>{
                             <h6 className='component_title'>МЫ В СОЦСЕТЯХ</h6>
                             <span>
                                 <Button disabled className = "pg-0" variant="link" href="#"><img className = "img-button-link You" src={Youtube} alt="." /></Button>
-                                <Button disabled className = "pg-0" variant="link" href="#"><img className = "img-button-link Tel" src={Telegram} alt="." /></Button>
+                                <Button className = "pg-0" variant="link" href="https://t.me/ksk_armada" target='_blank'><img className = "img-button-link Tel" src={Telegram} alt="." /></Button>
                                 <Button className = "pg-0" variant="link" href="https://www.instagram.com/ksk_armada/" target='_blank'><img className = "img-button-link Inst" src={Instagram} alt="." /></Button>
                                 <Button className = "pg-0" variant="link" href="https://vk.com/ksk_armada" target='_blank'><img className = "img-button-link Vk-fut" src={Vk} alt="." /></Button>       
                             </span>

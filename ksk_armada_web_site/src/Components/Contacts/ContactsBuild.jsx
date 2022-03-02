@@ -104,9 +104,9 @@ const ContactsBuild = () =>{
                         <h3>Мы в соцсетях</h3>
                         <div>
                             <Button disabled className = "pg-0" variant="link" href="#"><img className = "img-button-link You" src={Youtube} alt="." /></Button>
-                            <Button disabled className = "pg-0" variant="link" href="#"><img className = "img-button-link Tel" src={Telegram} alt="." /></Button>
-                            <Button className = "pg-0" variant="link" href="https://www.instagram.com/ksk_armada/" target='_blank'><img className = "img-button-link Inst" src={Instagram} alt="." /></Button>
-                            <Button className = "pg-0" variant="link" href="https://vk.com/ksk_armada" target='_blank'><img className = "img-button-link Vk" src={Vk} alt="." /></Button>
+                            <Button className = "pg-0" variant="link" href="https://t.me/ksk_armada" target='_blank'><img className = "img-button-link Tel" src={Telegram} alt="." /></Button>
+                            <Button className = "pg-0" variant="link" href="https://www.instagram.com/ksk_armada/" target='_blank'><img className = "img-button-link Inst" src={Instagram} alt="Instagram" /></Button>
+                            <Button className = "pg-0" variant="link" href="https://vk.com/ksk_armada" target='_blank'><img className = "img-button-link Vk" src={Vk} alt="vk" /></Button>
                         </div>
                     </Card>
                     <Card style = {{'background': 'transparent', 'border': 'none'}}>
