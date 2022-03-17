@@ -26,11 +26,14 @@ const Fouter = () =>{
     //Отправка формы на почту https://dashboard.emailjs.com => orlan1211@yahoo.com
     const form = useRef();
     const sendEmail = (e) => {
-        emailjs.sendForm('service_td3yqi6', 'template_g27ul53', form.current, 'user_RBIjAEvAriwtz46L0hxec')
+        let addClassSelector = document.querySelector("#loaderForm");
+        addClassSelector.classList.remove('noneShowLoad');
+        emailjs.sendForm('service_rla1tl2', 'template_04b0tu1', form.current, 'user_W6DyZvFT710FcvSPQiVd2')
         .then((result) => {
             console.log(result.text);
                 function success() {
-                    alert("Спасибо, мы скоро с Вами свяжемся!");
+                    addClassSelector.classList.add('noneShowLoad');
+                    alert("Спасибо за подписку, скоро мы отправим подтверждение на Вашу эл. почту.");
                     console.log("Успешное отправление формы.");
                     reset();
                 }
@@ -38,6 +41,7 @@ const Fouter = () =>{
             }, (error) => {
                 console.log(error.text);
                 function notSuccess() {
+                    addClassSelector.classList.add('noneShowLoad');
                     alert("Что-то пошло не так, ошибка отправки.");
                     console.log("Ошибка отправки формы.");
                     reset();
@@ -179,7 +183,7 @@ const Fouter = () =>{
                                             <span style={{'color':'white'}}>&nbsp; Согласие на&nbsp; обработку &nbsp;<a onClick={() => setModalShow(true)} id="personInfo">персональных данных</a>*</span>
                                         </div>
                                     </Form.Group>
-                                    <div style={{'marginBottom':'10px'}}>{load()}</div>
+                                    <div style={{'margin':'10px'}} className='noneShowLoad' id='loaderForm'>{load()}</div>
                                     <Button disabled={!isValid} type="submit">Подписаться</Button>
                                 </Form.Group>
                             </Form>
