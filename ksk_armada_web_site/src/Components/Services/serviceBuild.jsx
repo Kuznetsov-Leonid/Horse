@@ -2,11 +2,13 @@
  * Create by Kuznetsov Leonid 
  * 24.12.2021
  */
-import React from 'react';
-import { Button, Container, CardGroup, Card} from 'react-bootstrap';
+import React, { useState} from 'react';
+import { Button, Container, CardGroup, Card, Modal} from 'react-bootstrap';
+import Modal1 from '../Home/modal_1/modal_rent';
 
-const cerviceBuild = () =>{
-    
+const CerviceBuild = () =>{
+    const [modalShow1, setModalShow1] = useState(false);
+
     return (
         <>
             <CardGroup>
@@ -20,14 +22,17 @@ const cerviceBuild = () =>{
                         <div className='content-display'>
                             <h1>Постой лошадей</h1>
                             <p>
-                                Комната отдыха с&nbsp;бытовой техникой, индивидуальные шкафчики, амуничники,
-                                тёплый туалет,стиральная машина для вальтрапов, бинтов, легких попон.
                                 Создавать комфортные условия для жизни лошадей&nbsp;&mdash; наша работа!
+                            </p>
+                            <p>
+                                <Button variant="primary" onClick={() => setModalShow1(true)}>
+                                                Узнать больше.
+                                </Button>
                             </p>
                             <p> 
                                 Для получении информации о&nbsp;наличии свободных мест для постоя, 
                                 вы&nbsp;можете оставить свой вопрос на&nbsp;странице <a href='/contacts'>контакты</a> <br />
-                                или позвонить по&nbsp;номеру: <h3>+7 (967) 017-9963</h3>
+                                или позвонить по&nbsp;номеру: <h3>+7 (967) 017-99-63</h3>
                             </p>
                         </div>
                     </Card>
@@ -73,17 +78,42 @@ const cerviceBuild = () =>{
                             </p>
                             <p> 
                                 Вы&nbsp;можете оставить заявку на&nbsp;странице <a href='/contacts'>контакты</a> <br />
-                                или позвонить по&nbsp;номеру: <h3>+7 (967) 017-9963</h3>
+                                или позвонить по&nbsp;номеру: <h3>+7 (967) 017-99-63</h3>
                             </p>
                         </div>
                     </Card>
                 </Container>  
             </CardGroup>   
+
+            <MyVerticallyCenteredModal_1 show={modalShow1} onHide={() => setModalShow1(false)}/>
         </>
-    )
+    );
+    
+    function MyVerticallyCenteredModal_1(props) {
+        return (
+            <Modal
+                {...props}
+                size="lg"
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+            >
+                <Modal.Header closeButton>
+                    <Modal.Title id="contained-modal-title-vcenter">
+                        Постой для лошадей.
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <Modal1/>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button onClick={props.onHide}>Закрыть</Button>
+                </Modal.Footer>
+            </Modal>
+        );
+    }
 }
 
-export default cerviceBuild
+export default CerviceBuild
 
 //А для владельцев лошадей полный пансион. На базе клуба работает опытный берейтор и тренеры.
 //Так же на базе конюшни предлагаем услуги перевозки лошадей

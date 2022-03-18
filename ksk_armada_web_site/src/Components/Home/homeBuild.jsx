@@ -17,10 +17,15 @@ import Modal1 from './modal_1/modal_rent';
 import preview2 from './childShowTitle.jpg';
 import Modal2 from './modal_2/modal_newYear';
 
+//Импорты третьего модального окна
+import prew3 from './prew3.jpg';
+import Modal3 from './modal_3/modal_action';
+
 
 const HomeBuild = () =>{
     const [modalShow1, setModalShow1] = useState(false);
     const [modalShow2, setModalShow2] = useState(false);
+    const [modalShow3, setModalShow3] = useState(false);
     
     return (
         <>
@@ -70,6 +75,7 @@ const HomeBuild = () =>{
                             'margin':'20px'
                             }}>
                         <Carousel variant="dark">
+
                             <Carousel.Item style={{
                                 'backgroundColor':'gray', 
                                 'height':'650px'
@@ -93,6 +99,7 @@ const HomeBuild = () =>{
                                     </Button>
                                 </Carousel.Caption>
                             </Carousel.Item>
+
                             <Carousel.Item style={{
                                 'backgroundColor':'white', 
                                 'height':'650px'
@@ -116,6 +123,31 @@ const HomeBuild = () =>{
                                     </Button>
                                 </Carousel.Caption>
                             </Carousel.Item>
+                            
+                                <Carousel.Item style={{
+                                    'backgroundColor':'white', 
+                                    'height':'650px'
+                                    }}
+                                >
+                                    <img style={{
+                                        'width':'100%'
+                                        }} 
+                                        src={prew3} 
+                                        alt="." 
+                                    />
+                                    <Carousel.Caption>
+                                        <h5 style={{
+                                            'backgroundColor':'white',
+                                            'opacity':'70%'
+                                            }}>
+                                                Акция в КСК Армада!!!
+                                        </h5>
+                                        <Button variant="primary" onClick={() => setModalShow3(true)}>
+                                            Узнать больше.
+                                        </Button>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
+
                             </Carousel>
                         </Card>
                     </CardGroup>
@@ -124,6 +156,7 @@ const HomeBuild = () =>{
 
             <MyVerticallyCenteredModal_1 show={modalShow1} onHide={() => setModalShow1(false)}/>
             <MyVerticallyCenteredModal_2 show={modalShow2} onHide={() => setModalShow2(false)}/>
+            <MyVerticallyCenteredModal_3 show={modalShow3} onHide={() => setModalShow3(false)}/>
         </>
     )
 
@@ -171,6 +204,30 @@ const HomeBuild = () =>{
                     <Button onClick={props.onHide}>Закрыть</Button>
                 </Modal.Footer>
             </Modal>
+        );
+    }
+
+
+    function MyVerticallyCenteredModal_3(props) {
+        return (
+            <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+            >
+                <Modal.Header closeButton>
+                    <Modal.Title id="contained-modal-title-vcenter">
+                        Акция в КСК Армада!!!
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <Modal3/>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button onClick={props.onHide}>Закрыть</Button>
+                </Modal.Footer>
+            </Modal>    
         );
     }
 }

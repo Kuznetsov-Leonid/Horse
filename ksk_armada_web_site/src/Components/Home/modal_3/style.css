@@ -1,0 +1,14 @@
+prise{
+    font-size: x-large;
+    font-weight: 600;
+}
+discount{
+    font-size: large;
+    font-weight: 600;
+    text-decoration: line-through;
+    color: brown;
+}
+.txt_modal{
+    text-align: center;
+    color: brown;
+}

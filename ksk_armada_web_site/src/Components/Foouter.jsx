@@ -126,7 +126,7 @@ const Fouter = () =>{
                                     'marginTop': '15px'}}
                             className='component_fouter'>
                                 <h6 className='component_title'>НАШИ КОНТАКТЫ</h6>
-                                <p className = "Card-three-txt"><img className = "Ph-1" src={Phone} alt="." />+7 (967) 017-9963</p>
+                                <p className = "Card-three-txt"><img className = "Ph-1" src={Phone} alt="." />+7 (967) 017-99-63</p>
                                 <p className = "Card-three-txt"><img className = "Ma-1" src={Mail} alt="." />ksk_armada@Yahoo.com</p>
                         </Card>
                         <Card   

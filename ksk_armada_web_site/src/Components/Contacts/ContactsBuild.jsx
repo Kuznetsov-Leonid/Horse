@@ -98,7 +98,7 @@ const ContactsBuild = () =>{
                         }}>
                         <h1>Наши контакты</h1>
                         <p><img className='mes' src={Massege} alt="." />&nbsp;ksk_armada@Yahoo.com</p>
-                        <p><img className='ph' src={Phone} alt="." />&nbsp;+7 (967) 017-9963</p>
+                        <p><img className='ph' src={Phone} alt="." />&nbsp;+7 (967) 017-99-63</p>
                         <p><img className='poi' src={Point} alt="." />&nbsp;Новорязанское шоссе, дер. Дурниха Раменского района владение 79, 25&nbsp;км от&nbsp;МКАД.</p>
                         <br/>
                         <h3>Мы в соцсетях</h3>
