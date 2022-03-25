@@ -125,6 +125,7 @@ const HomeBuild = () =>{
                     </CardGroup>
                 </Container>
             </div>
+            
 
             <MyVerticallyCenteredModal_1 show={modalShow1} onHide={() => setModalShow1(false)}/>
             <MyVerticallyCenteredModal_2 show={modalShow2} onHide={() => setModalShow2(false)}/>

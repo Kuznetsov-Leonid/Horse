@@ -13,6 +13,7 @@ import Services from "../Pajes/Services";
 import AboutUs from "../Pajes/AboutUs";
 import Contacts from "../Pajes/Contacts";
 import NotFound from "../Pajes/NotFound";
+import PoliticsConf from '../Pajes/InfoCookie';
 
 //Email ksk-armada@yahoo.com
 
@@ -46,6 +47,7 @@ const Header = () =>{
                     <Route exact path ="/services" element={<Services/>} />
                     <Route exact path ="/aboutUs" element={<AboutUs/>} />
                     <Route exact path ="/contacts" element={<Contacts/>} />
+                    <Route exact path="/PoliticsConf" element={<PoliticsConf/>}/>
                     <Route exact path="*" element={<NotFound/>} />
                 </Routes>
                 <Foouter/>
