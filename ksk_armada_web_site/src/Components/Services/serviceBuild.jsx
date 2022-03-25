@@ -5,9 +5,11 @@
 import React, { useState} from 'react';
 import { Button, Container, CardGroup, Card, Modal} from 'react-bootstrap';
 import Modal1 from '../Home/modal_1/modal_rent';
+import Modal2 from '../Home/modal_3/modal_action';
 
 const CerviceBuild = () =>{
     const [modalShow1, setModalShow1] = useState(false);
+    const [modalShow2, setModalShow2] = useState(false);
 
     return (
         <>
@@ -16,6 +18,52 @@ const CerviceBuild = () =>{
                     <h1 style={{'textAlign':'center'}}>Услуги</h1>
                 </Card>
             </CardGroup>
+
+            <CardGroup className='nav-bg-3'>
+                <Container>
+                    <Card className='nav-content-1' style={{'background-color': '#C4C4C4'}}>
+                        <div className='content-display'>
+                            <h1>Конные прогулки</h1>
+                            <p>
+                                Наслаждайтесь природой и&nbsp;общением с&nbsp;животными. Лучший выбор для семейного отдыха и&nbsp;встреч с&nbsp;друзьями.
+                            </p>
+                            <p>
+                                <Button style={{'margin':'10px'}} variant="primary" onClick={() => setModalShow2(true)}>
+                                        Узнать больше.
+                                </Button>
+                                <Button  className='btn-online-signUp' href="https://dikidi.net/#widget=70567" variant="outline-dark">
+                                    Онлайн запись
+                                </Button>
+                            </p>
+                        </div>
+                    </Card>
+                </Container>
+            </CardGroup>
+
+            <CardGroup className='nav-bg-2'>
+                <Container>
+                    <Card className='nav-content-2' style={{'background-color': '#FBC9C9'}}>
+                        <div className='content-display'>
+                            <h1>Обучение верховой езде</h1>
+                            <p>
+                                Обучаем с&nbsp;основ до&nbsp;профессионального уровня, даже если 
+                                Вы&nbsp;до&nbsp;этого никогда не&nbsp;были в&nbsp;седле. 
+                                Уроки проходят в&nbsp;группах или индивидуально, а&nbsp;лошадки подбираются в&nbsp;соответствии с&nbsp;возрастом, 
+                                весом и&nbsp;навыками всадника.
+                            </p>
+                            <p>
+                                <Button style={{'margin':'10px'}} variant="primary" onClick={() => setModalShow2(true)}>
+                                        Узнать больше.
+                                </Button>
+                                <Button className='btn-online-signUp' href="https://dikidi.net/#widget=70567" variant="outline-dark">
+                                    Онлайн запись
+                                </Button>
+                            </p>
+                        </div>
+                    </Card>
+                </Container>
+            </CardGroup>
+
             <CardGroup className='nav-bg-1'>
                 <Container>
                     <Card className='nav-content-1' style={{'background-color': '#C4C4C4'}}>
@@ -38,35 +86,8 @@ const CerviceBuild = () =>{
                     </Card>
                 </Container>
             </CardGroup>
-            <CardGroup className='nav-bg-2'>
-                <Container>
-                    <Card className='nav-content-2' style={{'background-color': '#FBC9C9'}}>
-                        <div className='content-display'>
-                            <h1>Обучение верховой езде</h1>
-                            <p>
-                                Обучаем с&nbsp;основ до&nbsp;профессионального уровня, даже если 
-                                Вы&nbsp;до&nbsp;этого никогда не&nbsp;были в&nbsp;седле. 
-                                Уроки проходят в&nbsp;группах или индивидуально, а&nbsp;лошадки подбираются в&nbsp;соответствии с&nbsp;возрастом, 
-                                весом и&nbsp;навыками всадника.
-                            </p>
-                            <Button className='btn-online-signUp' href="https://dikidi.net/#widget=70567" variant="outline-dark">Онлайн запись</Button>
-                        </div>
-                    </Card>
-                </Container>
-            </CardGroup>
-            <CardGroup className='nav-bg-3'>
-                <Container>
-                    <Card className='nav-content-1' style={{'background-color': '#C4C4C4'}}>
-                        <div className='content-display'>
-                            <h1>Конные прогулки</h1>
-                            <p>
-                                Наслаждайтесь природой и&nbsp;общением с&nbsp;животными. Лучший выбор для семейного отдыха и&nbsp;встреч с&nbsp;друзьями.
-                            </p>
-                            <Button className='btn-online-signUp' href="https://dikidi.net/#widget=70567" variant="outline-dark">Онлайн запись</Button>
-                        </div>
-                    </Card>
-                </Container>
-            </CardGroup>
+            
+            
             <CardGroup className='nav-bg-4'>
                 <Container>
                     <Card className='nav-content-2' style={{'background-color': '#FBC9C9'}}>
@@ -86,6 +107,7 @@ const CerviceBuild = () =>{
             </CardGroup>   
 
             <MyVerticallyCenteredModal_1 show={modalShow1} onHide={() => setModalShow1(false)}/>
+            <MyVerticallyCenteredModal_2 show={modalShow2} onHide={() => setModalShow2(false)}/>
         </>
     );
     
@@ -109,6 +131,28 @@ const CerviceBuild = () =>{
                     <Button onClick={props.onHide}>Закрыть</Button>
                 </Modal.Footer>
             </Modal>
+        );
+    }
+    function MyVerticallyCenteredModal_2(props) {
+        return (
+            <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+            >
+                <Modal.Header closeButton>
+                    <Modal.Title id="contained-modal-title-vcenter">
+                        Услуги и акции.
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <Modal2/>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button onClick={props.onHide}>Закрыть</Button>
+                </Modal.Footer>
+            </Modal>    
         );
     }
 }

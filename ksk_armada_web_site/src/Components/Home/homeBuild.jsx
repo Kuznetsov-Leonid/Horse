@@ -14,18 +14,13 @@ import preview1 from './prev1.jpg';
 import Modal1 from './modal_1/modal_rent';
 
 //Импорты второго модального окна
-import preview2 from './childShowTitle.jpg';
-import Modal2 from './modal_2/modal_newYear';
-
-//Импорты третьего модального окна
-import prew3 from './prew3.jpg';
-import Modal3 from './modal_3/modal_action';
+import prew2 from './prew3.jpg';
+import Modal2 from './modal_3/modal_action';
 
 
 const HomeBuild = () =>{
     const [modalShow1, setModalShow1] = useState(false);
     const [modalShow2, setModalShow2] = useState(false);
-    const [modalShow3, setModalShow3] = useState(false);
     
     return (
         <>
@@ -69,70 +64,24 @@ const HomeBuild = () =>{
                                 </NavLink>
                             </div>
                         </Card>
+                        
                         <Card style = {{
                             'background': 'transparent', 
                             'border': 'none', 
-                            'margin':'20px'
+                            'margin':'20px',
+                            'borderRadius':'20px'
                             }}>
-                        <Carousel variant="dark">
-
-                            <Carousel.Item style={{
-                                'backgroundColor':'gray', 
-                                'height':'650px'
-                                }}>
-                                <img style={{
-                                    'width':'100%'
-                                    }} 
-                                    src={preview1} 
-                                    alt="." 
-                                />
-                                <Carousel.Caption>
-                                    <h5 style={{
-                                        'backgroundColor':'white',
-                                        'opacity':'70%'
-                                        }}>
-                                            Постой для лошадей.
-                                    </h5>
-                                    
-                                    <Button variant="primary" onClick={() => setModalShow1(true)}>
-                                        Узнать больше.
-                                    </Button>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-
-                            <Carousel.Item style={{
-                                'backgroundColor':'white', 
-                                'height':'650px'
-                                }}
-                            >
-                                <img style={{
-                                    'width':'100%'
-                                    }} 
-                                    src={preview2} 
-                                    alt="." 
-                                />
-                                <Carousel.Caption>
-                                    <h5 style={{
-                                        'backgroundColor':'white',
-                                        'opacity':'70%'
-                                        }}>
-                                            Новый год в КСК Армада.
-                                    </h5>
-                                    <Button variant="primary" onClick={() => setModalShow2(true)}>
-                                        Узнать больше.
-                                    </Button>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                            
+                            <Carousel variant="dark">
                                 <Carousel.Item style={{
-                                    'backgroundColor':'white', 
-                                    'height':'650px'
-                                    }}
-                                >
+                                    'backgroundColor':'gray', 
+                                    'height':'650px',
+                                    'borderRadius':'20px'
+                                    }}>
                                     <img style={{
-                                        'width':'100%'
+                                        'width':'100%',
+                                        'borderRadius':'20px'
                                         }} 
-                                        src={prew3} 
+                                        src={preview1} 
                                         alt="." 
                                     />
                                     <Carousel.Caption>
@@ -140,14 +89,37 @@ const HomeBuild = () =>{
                                             'backgroundColor':'white',
                                             'opacity':'70%'
                                             }}>
-                                                Акция в КСК Армада!!!
+                                                Постой для лошадей.
                                         </h5>
-                                        <Button variant="primary" onClick={() => setModalShow3(true)}>
+                                        <Button variant="primary" onClick={() => setModalShow1(true)}>
                                             Узнать больше.
                                         </Button>
                                     </Carousel.Caption>
                                 </Carousel.Item>
-
+                                <Carousel.Item style={{
+                                    'backgroundColor':'white', 
+                                    'height':'650px',
+                                    'borderRadius':'20px'
+                                    }}>
+                                    <img style={{
+                                            'width':'100%',
+                                            'borderRadius':'20px'
+                                            }} 
+                                            src={prew2} 
+                                            alt="Прокат лошадей" 
+                                        />
+                                    <Carousel.Caption>
+                                        <h5 style={{
+                                            'backgroundColor':'white',
+                                            'opacity':'70%'
+                                            }}>
+                                                Акция в КСК Армада!!!
+                                        </h5>
+                                        <Button variant="primary" onClick={() => setModalShow2(true)}>
+                                            Узнать больше.
+                                        </Button>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
                             </Carousel>
                         </Card>
                     </CardGroup>
@@ -156,7 +128,7 @@ const HomeBuild = () =>{
 
             <MyVerticallyCenteredModal_1 show={modalShow1} onHide={() => setModalShow1(false)}/>
             <MyVerticallyCenteredModal_2 show={modalShow2} onHide={() => setModalShow2(false)}/>
-            <MyVerticallyCenteredModal_3 show={modalShow3} onHide={() => setModalShow3(false)}/>
+            
         </>
     )
 
@@ -183,32 +155,7 @@ const HomeBuild = () =>{
         );
     }
 
-
     function MyVerticallyCenteredModal_2(props) {
-        return (
-            <Modal
-                {...props}
-                size="lg"
-                aria-labelledby="contained-modal-title-vcenter"
-                centered
-            >
-                <Modal.Header closeButton>
-                    <Modal.Title id="contained-modal-title-vcenter">
-                        Ёлка в&nbsp;честь нового года.
-                    </Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <Modal2/>
-                </Modal.Body>
-                <Modal.Footer>
-                    <Button onClick={props.onHide}>Закрыть</Button>
-                </Modal.Footer>
-            </Modal>
-        );
-    }
-
-
-    function MyVerticallyCenteredModal_3(props) {
         return (
             <Modal
             {...props}
@@ -218,11 +165,11 @@ const HomeBuild = () =>{
             >
                 <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter">
-                        Акция в КСК Армада!!!
+                        Акция!!!
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Modal3/>
+                    <Modal2/>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={props.onHide}>Закрыть</Button>
