@@ -2,6 +2,9 @@ import React from "react";
 import {Button} from 'react-bootstrap';
 import './style.css';
 
+//Metrics
+import { pingBtn } from '../../../Utils/metrics';
+
 
 const modal_action = () => {
     return(
@@ -36,7 +39,13 @@ const modal_action = () => {
                     ksk_armada@Yahoo.com
                 </h4>
                 <br />
-                <Button variant="outline-dark" className = "mr-2 Get-con" href="https://dikidi.net/#widget=70567">Онлайн запись</Button>
+                <Button 
+                    variant="outline-dark" 
+                    className = "mr-2 Get-con" 
+                    href="https://dikidi.net/#widget=70567"
+                    onClick={() =>{pingBtn('reachGoal', 'DikidiClick')}}>
+                        Онлайн запись
+                </Button>
             </div>
             
         </>

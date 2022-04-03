@@ -7,6 +7,10 @@ import { Button, Container, CardGroup, Card, Modal} from 'react-bootstrap';
 import Modal1 from '../Home/modal_1/modal_rent';
 import Modal2 from '../Home/modal_3/modal_action';
 
+//Metrics
+import { pingBtn } from '../../Utils/metrics';
+
+
 const CerviceBuild = () =>{
     const [modalShow1, setModalShow1] = useState(false);
     const [modalShow2, setModalShow2] = useState(false);
@@ -31,7 +35,11 @@ const CerviceBuild = () =>{
                                 <Button style={{'margin':'10px'}} variant="primary" onClick={() => setModalShow2(true)}>
                                         Узнать больше.
                                 </Button>
-                                <Button  className='btn-online-signUp' href="https://dikidi.net/#widget=70567" variant="outline-dark">
+                                <Button  
+                                    className='btn-online-signUp' 
+                                    href="https://dikidi.net/#widget=70567" 
+                                    variant="outline-dark"
+                                    onClick={() =>{pingBtn('reachGoal', 'DikidiClick')}}>
                                     Онлайн запись
                                 </Button>
                             </p>
@@ -55,7 +63,11 @@ const CerviceBuild = () =>{
                                 <Button style={{'margin':'10px'}} variant="primary" onClick={() => setModalShow2(true)}>
                                         Узнать больше.
                                 </Button>
-                                <Button className='btn-online-signUp' href="https://dikidi.net/#widget=70567" variant="outline-dark">
+                                <Button 
+                                    className='btn-online-signUp' 
+                                    href="https://dikidi.net/#widget=70567" 
+                                    variant="outline-dark"
+                                    onClick={() =>{pingBtn('reachGoal', 'DikidiClick')}}>
                                     Онлайн запись
                                 </Button>
                             </p>

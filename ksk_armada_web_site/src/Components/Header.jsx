@@ -4,8 +4,11 @@
  */
 import React from 'react';
 import {Button, Container, Nav, Navbar} from 'react-bootstrap';
-import { BrowserRouter, Route, NavLink, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, NavLink, Routes, widthRouter } from 'react-router-dom';
 import Foouter from './Foouter';
+
+//Metrics
+import { pingBtn } from '../Utils/metrics';
 
 //Routing
 import Home from "../Pajes/Home";
@@ -35,13 +38,19 @@ const Header = () =>{
                             <Nav.Link><NavLink to="/contacts" className = "linkColor">Контакты</NavLink></Nav.Link>
                         </Nav>
                         <Nav>
-                            <Button variant="outline-dark" className = "mr-2 Get-con" href="https://dikidi.net/#widget=70567">Онлайн запись</Button>
+                            <Button
+                                variant="outline-dark" 
+                                className = "mr-2 Get-con" 
+                                href="https://dikidi.net/#widget=70567"
+                                onClick={() =>{pingBtn('reachGoal', 'DikidiClick')}}>
+                                    Онлайн запись
+                            </Button>
                         </Nav>
                             
                         </Navbar.Collapse>
                         
                     </Container>
-                </Navbar>
+                </Navbar>   
                 <Routes>
                     <Route exact path ="/" element={<Home/>} />
                     <Route exact path ="/services" element={<Services/>} />

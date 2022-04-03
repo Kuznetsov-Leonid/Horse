@@ -17,6 +17,8 @@ import Modal1 from './modal_1/modal_rent';
 import prew2 from './prew3.jpg';
 import Modal2 from './modal_3/modal_action';
 
+//Metrics
+import { pingBtn } from '../../Utils/metrics';
 
 const HomeBuild = () =>{
     const [modalShow1, setModalShow1] = useState(false);
@@ -48,7 +50,8 @@ const HomeBuild = () =>{
                                             'border':'solid #F75E05 1px',
                                             'color':'#F75E05',
                                             'width': '124px'
-                                        }}>
+                                        }}
+                                        onClick={() => {pingBtn('reachGoal','clickAboutUs')}}>
                                         О нас
                                     </Button>
                                 </NavLink>
@@ -58,7 +61,8 @@ const HomeBuild = () =>{
                                         className='Services'
                                         style = {{
                                             'width': '124px'
-                                        }}>
+                                        }}
+                                        onClick={() => {pingBtn('reachGoal','clickServices')}}>
                                         Услуги
                                     </Button>
                                 </NavLink>
