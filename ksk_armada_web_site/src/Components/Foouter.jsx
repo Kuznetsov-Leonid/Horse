@@ -131,6 +131,7 @@ const Fouter = () =>{
                                 <h6 className='component_title'>НАШИ КОНТАКТЫ</h6>
                                 <p className = "Card-three-txt"><img className = "Ph-1" src={Phone} alt="." />+7 (967) 017-99-63</p>
                                 <p className = "Card-three-txt"><img className = "Ma-1" src={Mail} alt="." />ksk_armada@Yahoo.com</p>
+                                <NavLink to="/PoliticsConf" className='map-link' onClick="scroll(0,0); return false" ><a >Политика конфиденциальности</a></NavLink>
                         </Card>
                         <Card   
                             style = {{
