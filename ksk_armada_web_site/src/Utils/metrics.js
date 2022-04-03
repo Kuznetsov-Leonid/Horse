@@ -5,6 +5,6 @@
  */
 
 export const pingBtn = (type, value) => {
-    ym(88138911, type, value);
+    window.ym(88138911, type, value);
 }
 
