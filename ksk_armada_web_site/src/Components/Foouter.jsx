@@ -12,7 +12,8 @@ import Youtube from '../img/Subtract.png';
 //import Facebook from '../img/Vector-0.png';
 //import Twitter from '../img/Vector-1.png';
 import Telegram from '../img/Vector-2.png';
-import Instagram from '../img/Vector-3.png';
+//Временно запр. в РФ
+//import Instagram from '../img/Vector-3.png';
 import Vk from '../img/Vector-5.png';
 import Mail from '../img/Mail.png';
 import Phone from '../img/Phone.png';
@@ -112,9 +113,11 @@ const Fouter = () =>{
                             className='component_fouter'>
                             <h6 className='component_title'>МЫ В СОЦСЕТЯХ</h6>
                             <span>
-                                <Button disabled className = "pg-0" variant="link" href="#"><img className = "img-button-link You" src={Youtube} alt="." /></Button>
+                                {/* Временно отстутствует
+                                <Button disabled className = "pg-0" variant="link" href="#"><img className = "img-button-link You" src={Youtube} alt="." /></Button> */}
                                 <Button className = "pg-0" variant="link" href="https://t.me/ksk_armada" target='_blank'><img className = "img-button-link Tel" src={Telegram} alt="." /></Button>
-                                <Button className = "pg-0" variant="link" href="https://www.instagram.com/ksk_armada/" target='_blank'><img className = "img-button-link Inst" src={Instagram} alt="." /></Button>
+                                {/* Временно запр. в РФ
+                                <Button className = "pg-0" variant="link" href="https://www.instagram.com/ksk_armada/" target='_blank'><img className = "img-button-link Inst" src={Instagram} alt="." /></Button> */}
                                 <Button className = "pg-0" variant="link" href="https://vk.com/ksk_armada" target='_blank'><img className = "img-button-link Vk-fut" src={Vk} alt="." /></Button>       
                             </span>
                         </Card>

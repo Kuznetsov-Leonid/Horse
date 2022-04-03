@@ -11,9 +11,10 @@ import Info from '../info';
 import Massege from './massege.png';
 import Phone from './phone.png';
 import Point from './point.png';
-import Youtube from './You.png';
+//import Youtube from './You.png';
 import Telegram from './Tel.png';
-import Instagram from './Inst.png';
+//Временно запр. в РФ
+//import Instagram from './Inst.png';
 import Vk from './Vk.png';
 import Chess from './chess.png';
 
@@ -103,9 +104,11 @@ const ContactsBuild = () =>{
                         <br/>
                         <h3>Мы в соцсетях</h3>
                         <div>
-                            <Button disabled className = "pg-0" variant="link" href="#"><img className = "img-button-link You" src={Youtube} alt="." /></Button>
+                            {/* Временно отсутствует */}
+                            {/* <Button disabled className = "pg-0" variant="link" href="#"><img className = "img-button-link You" src={Youtube} alt="." /></Button> */}
                             <Button className = "pg-0" variant="link" href="https://t.me/ksk_armada" target='_blank'><img className = "img-button-link Tel" src={Telegram} alt="." /></Button>
-                            <Button className = "pg-0" variant="link" href="https://www.instagram.com/ksk_armada/" target='_blank'><img className = "img-button-link Inst" src={Instagram} alt="Instagram" /></Button>
+                            {/* Временно запрещённое в РФ */}
+                            {/* <Button className = "pg-0" variant="link" href="https://www.instagram.com/ksk_armada/" target='_blank'><img className = "img-button-link Inst" src={Instagram} alt="Instagram" /></Button> */}
                             <Button className = "pg-0" variant="link" href="https://vk.com/ksk_armada" target='_blank'><img className = "img-button-link Vk" src={Vk} alt="vk" /></Button>
                         </div>
                     </Card>
