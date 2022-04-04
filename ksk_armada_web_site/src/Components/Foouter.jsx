@@ -120,6 +120,10 @@ const Fouter = () =>{
                                 <Button className = "pg-0" variant="link" href="https://www.instagram.com/ksk_armada/" target='_blank'><img className = "img-button-link Inst" src={Instagram} alt="." /></Button> */}
                                 <Button className = "pg-0" variant="link" href="https://vk.com/ksk_armada" target='_blank'><img className = "img-button-link Vk-fut" src={Vk} alt="." /></Button>       
                             </span>
+                            <h6 className='component_title' style={{'marginTop':'12px'}}>СТАТИСТИКА</h6>
+                            <Button className = "pg-0" variant="link"  href="https://webmaster.yandex.ru/siteinfo/?site=ksk-armada.ru" target='_blank'>
+                                <img className='iconX' alt='' src="https://yandex.ru/cycounter?ksk-armada.ru&theme=dark&lang=ru"/>
+                            </Button>       
                         </Card>
                         <Card   
                             style = {{
