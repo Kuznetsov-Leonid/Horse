@@ -17,12 +17,17 @@ import Modal1 from './modal_1/modal_rent';
 import prew2 from './prew3.jpg';
 import Modal2 from './modal_3/modal_action';
 
+//Импорты третьего модального окна
+import prew3 from './modal_2/img7.jpg';
+import Modal3 from './modal_2/ksk_starset';
+
 //Metrics
 import { pingBtn } from '../../Utils/metrics';
 
 const HomeBuild = () =>{
     const [modalShow1, setModalShow1] = useState(false);
     const [modalShow2, setModalShow2] = useState(false);
+    const [modalShow3, setModalShow3] = useState(false);
     
     return (
         <>
@@ -124,6 +129,30 @@ const HomeBuild = () =>{
                                         </Button>
                                     </Carousel.Caption>
                                 </Carousel.Item>
+                                <Carousel.Item style={{
+                                    'backgroundColor':'white', 
+                                    'height':'650px',
+                                    'borderRadius':'20px'
+                                    }}>
+                                    <img style={{
+                                            'width':'100%',
+                                            'borderRadius':'20px'
+                                            }} 
+                                            src={prew3} 
+                                            alt="Прокат лошадей" 
+                                        />
+                                    <Carousel.Caption>
+                                        <h5 style={{
+                                            'backgroundColor':'white',
+                                            'opacity':'70%'
+                                            }}>
+                                                Выездка в КСК Созвездие.
+                                        </h5>
+                                        <Button variant="primary" onClick={() => setModalShow3(true)}>
+                                            Узнать больше.
+                                        </Button>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
                             </Carousel>
                         </Card>
                     </CardGroup>
@@ -133,6 +162,7 @@ const HomeBuild = () =>{
 
             <MyVerticallyCenteredModal_1 show={modalShow1} onHide={() => setModalShow1(false)}/>
             <MyVerticallyCenteredModal_2 show={modalShow2} onHide={() => setModalShow2(false)}/>
+            <MyVerticallyCenteredModal_3 show={modalShow3} onHide={() => setModalShow3(false)}/>
             
         </>
     )
@@ -175,6 +205,29 @@ const HomeBuild = () =>{
                 </Modal.Header>
                 <Modal.Body>
                     <Modal2/>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button onClick={props.onHide}>Закрыть</Button>
+                </Modal.Footer>
+            </Modal>    
+        );
+    }
+
+    function MyVerticallyCenteredModal_3(props) {
+        return (
+            <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+            >
+                <Modal.Header closeButton>
+                    <Modal.Title id="contained-modal-title-vcenter">
+                        Выездка в КСК Созвездие.
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <Modal3/>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={props.onHide}>Закрыть</Button>
