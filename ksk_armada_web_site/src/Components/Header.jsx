@@ -3,7 +3,7 @@
  * 20.12.2021
  */
 import React from 'react';
-import {Button, Container, Nav, Navbar} from 'react-bootstrap';
+import {Button, Container, Nav, Navbar, NavDropdown, MenuItem} from 'react-bootstrap';
 import { BrowserRouter, Route, NavLink, Routes, widthRouter } from 'react-router-dom';
 import Foouter from './Foouter';
 
@@ -13,6 +13,11 @@ import { pingBtn } from '../Utils/metrics';
 //Routing
 import Home from "../Pajes/Home";
 import Services from "../Pajes/Services";
+import HorseWalks from "../Pajes/HorseWalks";
+import RidingTraining from "../Pajes/RidingTraining";
+import Ippotherapy from "../Pajes/Ippotherapy";
+import HoldUpHorse from "../Pajes/HoldUpHorse";
+import PhotoWithHorse from "../Pajes/PhotoHorse";
 import AboutUs from "../Pajes/AboutUs";
 import Contacts from "../Pajes/Contacts";
 import NotFound from "../Pajes/NotFound";
@@ -32,10 +37,21 @@ const Header = () =>{
                         <Navbar.Toggle aria-controls = "responsive-navbar-nav" />
                         <Navbar.Collapse id = "responsive-navbar-nav" >
                         <Nav className="me-auto">
-                            <Nav.Link><NavLink to="/" className = "linkColor">Главная</NavLink></Nav.Link>
-                            <Nav.Link><NavLink to="/services" className = "linkColor">Услуги</NavLink></Nav.Link>
-                            <Nav.Link><NavLink to="/aboutUs" className = "linkColor">О нас</NavLink></Nav.Link>
-                            <Nav.Link><NavLink to="/contacts" className = "linkColor">Контакты</NavLink></Nav.Link>
+                            <Nav.Link eventKey={1}><NavLink to="/" className = "linkColor">Главная</NavLink></Nav.Link>
+                            {/* <Nav.Link ><NavLink to="/services" className = "linkColor">Услуги</NavLink></Nav.Link> */}
+                            <Nav.Link eventKey={2}><NavLink to="/aboutUs" className = "linkColor">О нас</NavLink></Nav.Link>
+                            <Nav.Link eventKey={3}><NavLink to="/contacts" className = "linkColor">Контакты</NavLink></Nav.Link>
+                            <NavDropdown eventKey={4} className = "linkColor" title="Услуги" id="basic-nav-dropdown">
+                                <NavDropdown.Item eventKey={4.1}><NavLink to="/HorseWalks">Конные прогулки</NavLink></NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item eventKey={4.2}><NavLink to="/RidingTraining">Обучение верховой езде</NavLink></NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item eventKey={4.3}><NavLink to="/HoldUpHorse">Постой лошадей</NavLink></NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item eventKey={4.4}><NavLink to="/PhotoWithHorse">Фотосессии с лошадьми</NavLink></NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item eventKey={4.5}><NavLink to="/Ippotherapy">Иппотерапия</NavLink></NavDropdown.Item>
+                            </NavDropdown>
                         </Nav>
                         <Nav>
                             <Button
@@ -53,6 +69,11 @@ const Header = () =>{
                 </Navbar>   
                 <Routes>
                     <Route exact path ="/" element={<Home/>} />
+                    <Route exact path ="/HorseWalks" element={<HorseWalks/>} />
+                    <Route exact path ="/RidingTraining" element={<RidingTraining/>} />
+                    <Route exact path ="/Ippotherapy" element={<Ippotherapy/>} />
+                    <Route exact path ="/HoldUpHorse" element={<HoldUpHorse/>} />
+                    <Route exact path ="/PhotoWithHorse" element={<PhotoWithHorse/>} />
                     <Route exact path ="/services" element={<Services/>} />
                     <Route exact path ="/aboutUs" element={<AboutUs/>} />
                     <Route exact path ="/contacts" element={<Contacts/>} />
