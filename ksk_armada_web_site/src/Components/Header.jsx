@@ -26,7 +26,7 @@ const Header = () =>{
     return (
         <>
             <BrowserRouter forceRefresh={true} basename="/">
-                <Navbar sticky = "top" collapseOnSelect className='headerBG' variant="dark" expand="lg">
+                <Navbar collapseOnSelect className='headerBG' variant="dark" expand="lg">
                     <Container>
                         <Navbar.Brand style = {{'color':'white'}} href="/">КСК АРМАДА</Navbar.Brand>
                         <Navbar.Toggle aria-controls = "responsive-navbar-nav" />

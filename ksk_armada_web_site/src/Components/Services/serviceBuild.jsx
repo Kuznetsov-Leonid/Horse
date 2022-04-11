@@ -6,7 +6,7 @@ import React, { useState} from 'react';
 import { Button, Container, CardGroup, Card, Modal} from 'react-bootstrap';
 import Modal1 from '../Home/modal_1/modal_rent';
 import Modal2 from '../Home/modal_3/modal_action';
-
+//import { JumboEducationHorseRide, JumboHippotherapy, JumboHorseRide, JumboHoldUpWithHorse, JumboPhotoWithHorse } from './ServiseComponents/Jumbotron';
 //Metrics
 import { pingBtn } from '../../Utils/metrics';
 
@@ -17,12 +17,17 @@ const CerviceBuild = () =>{
 
     return (
         <>
+            {/* <JumboEducationHorseRide/>
+            <JumboHippotherapy/>
+            <JumboHorseRide/>
+            <JumboHoldUpWithHorse/>
+            <JumboPhotoWithHorse/> */}
             <CardGroup>
                 <Card style = {{'background': 'transparent', 'border': 'none', 'margin':'20px'}}>
                     <h1 style={{'textAlign':'center'}}>Услуги</h1>
                 </Card>
             </CardGroup>
-
+            
             <CardGroup className='nav-bg-3'>
                 <Container>
                     <Card className='nav-content-1' style={{'background-color': '#C4C4C4'}}>
