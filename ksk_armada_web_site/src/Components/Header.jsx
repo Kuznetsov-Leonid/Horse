@@ -3,10 +3,11 @@
  * 20.12.2021
  */
 import React from 'react';
-import {Button, Container, Nav, Navbar, NavDropdown, MenuItem} from 'react-bootstrap';
+import {Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { BrowserRouter, Route, NavLink, Routes, widthRouter } from 'react-router-dom';
 import Foouter from './Foouter';
-
+import Logo from '../img/ArmadaLogoPNG.png';
+import styled from 'styled-components';
 //Metrics
 import { pingBtn } from '../Utils/metrics';
 
@@ -25,15 +26,25 @@ import PoliticsConf from '../Pajes/InfoCookie';
 
 //Email ksk-armada@yahoo.com
 
+const Styles = styled.div`
+    .logo{
+        width: 100px;
+        margin-left: 50px;
+    }
+`
+
 const Header = () =>{
-
-
     return (
         <>
             <BrowserRouter forceRefresh={true} basename="/">
-                <Navbar collapseOnSelect className='headerBG' variant="dark" expand="lg">
+                <Navbar collapseOnSelect className='headerBG' variant="dark" expand="lg" style={{'height':'auto'}}>
                     <Container>
-                        <Navbar.Brand style = {{'color':'white'}} href="/">КСК АРМАДА</Navbar.Brand>
+                        {/* <Navbar.Brand style = {{'color':'white'}} href="/">КСК АРМАДА</Navbar.Brand> */}
+                        <Styles>
+                            <Navbar.Brand href="/">
+                                    <img className='logo' src={Logo} alt='ARMADA'/>{' '}
+                            </Navbar.Brand>
+                        </Styles>
                         <Navbar.Toggle aria-controls = "responsive-navbar-nav" />
                         <Navbar.Collapse id = "responsive-navbar-nav" >
                         <Nav className="me-auto">
@@ -41,16 +52,12 @@ const Header = () =>{
                             {/* <Nav.Link ><NavLink to="/services" className = "linkColor">Услуги</NavLink></Nav.Link> */}
                             <Nav.Link eventKey={2}><NavLink to="/aboutUs" className = "linkColor">О нас</NavLink></Nav.Link>
                             <Nav.Link eventKey={3}><NavLink to="/contacts" className = "linkColor">Контакты</NavLink></Nav.Link>
-                            <NavDropdown eventKey={4} className = "linkColor" title="Услуги" id="basic-nav-dropdown">
-                                <NavDropdown.Item eventKey={4.1}><NavLink to="/HorseWalks">Конные прогулки</NavLink></NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item eventKey={4.2}><NavLink to="/RidingTraining">Обучение верховой езде</NavLink></NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item eventKey={4.3}><NavLink to="/HoldUpHorse">Постой лошадей</NavLink></NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item eventKey={4.4}><NavLink to="/PhotoWithHorse">Фотосессии с лошадьми</NavLink></NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item eventKey={4.5}><NavLink to="/Ippotherapy">Иппотерапия</NavLink></NavDropdown.Item>
+                            <NavDropdown eventKey={4} className = "dropLinkColor" title="Услуги" id="basic-nav-dropdown">
+                                <NavDropdown.Item eventKey={4.1}><NavLink className="dropColor" to="/HorseWalks">Конные прогулки</NavLink></NavDropdown.Item>
+                                <NavDropdown.Item eventKey={4.2}><NavLink className="dropColor" to="/RidingTraining">Обучение верховой езде</NavLink></NavDropdown.Item>
+                                <NavDropdown.Item eventKey={4.3}><NavLink className="dropColor" to="/HoldUpHorse">Постой лошадей</NavLink></NavDropdown.Item>
+                                <NavDropdown.Item eventKey={4.4}><NavLink className="dropColor" to="/PhotoWithHorse">Фотосессии с лошадьми</NavLink></NavDropdown.Item>
+                                <NavDropdown.Item eventKey={4.5}><NavLink className="dropColor" to="/Ippotherapy">Иппотерапия</NavLink></NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                         <Nav>
@@ -82,7 +89,6 @@ const Header = () =>{
                 </Routes>
                 <Foouter/>
             </BrowserRouter>
-            
         </>
     )
 }

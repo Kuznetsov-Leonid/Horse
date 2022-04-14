@@ -5,6 +5,8 @@
  */
 import React from "react";
 import { JumboHorseRide } from './ServiseComponents/Jumbotron';
+import { ContentHorseRide } from './ServiseComponents/Content';
+
 
 const HorseRide = () => {
     return(

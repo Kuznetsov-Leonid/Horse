@@ -5,11 +5,13 @@
  */
 import React from "react";
 import { JumboPhotoWithHorse } from './ServiseComponents/Jumbotron';
+import { ContentPhotoWithHorse } from './ServiseComponents/Content';
 
 const PhotoWithHorse = () => {
     return(
         <>
             <JumboPhotoWithHorse/>
+            <ContentPhotoWithHorse/>
         </>
     );
 }

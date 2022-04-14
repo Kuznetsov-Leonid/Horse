@@ -36,6 +36,7 @@ const Styles = styled.div `
         background-size: cover;
         color: #efefef;
         height: 700px;
+        width: auto;
         position: realetive;
         z-index: -2;
         display: flex;
