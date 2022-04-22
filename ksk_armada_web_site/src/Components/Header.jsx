@@ -8,6 +8,9 @@ import { BrowserRouter, Route, NavLink, Routes, widthRouter } from 'react-router
 import Foouter from './Foouter';
 import Logo from '../img/ArmadaLogoPNG.png';
 import styled from 'styled-components';
+
+import OnlineEntry from '../Components/Modal/OnlineEntry';
+
 //Metrics
 import { pingBtn } from '../Utils/metrics';
 
@@ -61,13 +64,14 @@ const Header = () =>{
                             </NavDropdown>
                         </Nav>
                         <Nav>
-                            <Button
+                            {/* <Button
                                 variant="outline-dark" 
                                 className = "mr-2 Get-con" 
                                 href="https://dikidi.net/#widget=70567"
                                 onClick={() =>{pingBtn('reachGoal', 'DikidiClick')}}>
                                     Онлайн запись
-                            </Button>
+                            </Button> */}
+                            <OnlineEntry onClick={() =>{pingBtn('reachGoal', 'OnlineEntry')}}/>
                         </Nav>
                             
                         </Navbar.Collapse>

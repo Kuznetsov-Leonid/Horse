@@ -12,6 +12,7 @@ import imgWalk from './imgWalk.jpg';
 import imgTerapy from './imgTerapy.jpg';
 import imgPost from './imgPost.jpg';
 import imgPhotoSet from './imgPhotoSet.jpg';
+import OnlineEntry from '../../Modal/OnlineEntry';
 //Metrics
 import { pingBtn } from '../../../Utils/metrics';
 
@@ -55,14 +56,7 @@ const Styles = styled.div `
 
 //Онлайн заявка
 const JumboObj = {
-    btn : <Button
-                variant="outline-dark" 
-                className = "mr-2 Get-con" 
-                href="https://dikidi.net/#widget=70567"
-                onClick={() =>{pingBtn('reachGoal', 'DikidiClick')}}>
-                    Онлайн запись
-            </Button>,
-
+    btn : <OnlineEntry onClick={() =>{pingBtn('reachGoal', 'OnlineEntry')}}/>,
     num : <h4>+7 (967) 017-99-63</h4>
 }
 
