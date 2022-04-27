@@ -16,7 +16,6 @@ import { pingBtn } from '../Utils/metrics';
 
 //Routing
 import Home from "../Pajes/Home";
-import Services from "../Pajes/Services";
 import HorseWalks from "../Pajes/HorseWalks";
 import RidingTraining from "../Pajes/RidingTraining";
 import Ippotherapy from "../Pajes/Ippotherapy";
@@ -85,7 +84,6 @@ const Header = () =>{
                     <Route exact path ="/Ippotherapy" element={<Ippotherapy/>} />
                     <Route exact path ="/HoldUpHorse" element={<HoldUpHorse/>} />
                     <Route exact path ="/PhotoWithHorse" element={<PhotoWithHorse/>} />
-                    <Route exact path ="/services" element={<Services/>} />
                     <Route exact path ="/aboutUs" element={<AboutUs/>} />
                     <Route exact path ="/contacts" element={<Contacts/>} />
                     <Route exact path="/PoliticsConf" element={<PoliticsConf/>}/>

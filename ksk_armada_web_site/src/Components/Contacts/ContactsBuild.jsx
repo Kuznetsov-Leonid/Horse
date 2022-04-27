@@ -55,9 +55,6 @@ const ContactsBuild = () =>{
                     </Card>
                 </CardGroup>
                 <CardGroup style={{'marginTop':'80px'}}>
-                    {/* <Card style = {{'background': 'transparent', 'border': 'none'}}>
-                        <img src={Chess} alt="." />
-                    </Card> */}
                     <Card style = {{'background': 'transparent', 'border': 'none'}}>
                         <Reviews/>
                     </Card>
