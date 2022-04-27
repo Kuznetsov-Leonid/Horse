@@ -35,13 +35,6 @@ const CerviceBuild = () =>{
                                 <Button style={{'margin':'10px'}} variant="primary" onClick={() => setModalShow2(true)}>
                                         Узнать больше.
                                 </Button>
-                                <Button  
-                                    className='btn-online-signUp' 
-                                    href="https://dikidi.net/#widget=70567" 
-                                    variant="outline-dark"
-                                    onClick={() =>{pingBtn('reachGoal', 'DikidiClick')}}>
-                                    Онлайн запись
-                                </Button>
                             </p>
                         </div>
                     </Card>
@@ -62,13 +55,6 @@ const CerviceBuild = () =>{
                             <p>
                                 <Button style={{'margin':'10px'}} variant="primary" onClick={() => setModalShow2(true)}>
                                         Узнать больше.
-                                </Button>
-                                <Button 
-                                    className='btn-online-signUp' 
-                                    href="https://dikidi.net/#widget=70567" 
-                                    variant="outline-dark"
-                                    onClick={() =>{pingBtn('reachGoal', 'DikidiClick')}}>
-                                    Онлайн запись
                                 </Button>
                             </p>
                         </div>
