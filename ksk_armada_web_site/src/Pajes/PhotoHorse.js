@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import Service from '../Components/Services/serviceBuild';
+import PhotoWithHorse from '../Components/Services/PhotoWithHorse';
 
-export default class Services extends Component{
+
+export default class PhotoHorse extends Component{
     render(){
         return(
             <>
                 <div className='main'>
-                    <Service/>
+                    <PhotoWithHorse/>
                 </div>
             </>
         )
